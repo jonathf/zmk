@@ -12,11 +12,11 @@
 /* ZMK_COMBO(_COMBO_AE_3, _0_AE,    2  3, 4 5 6) */
 
 
-#define combo_oe(layer, key) ZMK_COMBO(_OE_ ## layer, key, _UL1 _UL2, layer)
+#define combo_oe(layer, key) ZMK_COMBO(_OE_ ## layer, key, _UL4 _UL3, layer)
 combo_oe(0, _1_OE)
 combo_oe(4, _0_OE)
 
-#define combo_aa(layer, key) ZMK_COMBO(_AA_ ## layer, key, _UL2 _UL3, layer)
+#define combo_aa(layer, key) ZMK_COMBO(_AA_ ## layer, key, _UL3 _UL2, layer)
 combo_aa(0, _1_AA)
 combo_aa(4, _0_AA)
 
@@ -44,7 +44,7 @@ combo_ae(4, _0_AE)
 
 ZMK_COMBO(_ESC,   &kp ESC,    _ML3 _ML4, 0 4)
 ZMK_COMBO(_TAB,   &kp TAB,    _ML2 _ML3, 0 4)
-ZMK_COMBO(_INS,   &kp INS,    _UR3 _UR4, 0 4)
+ZMK_COMBO(_INS,   &kp INS,    _UR2 _UR3, 0 4)
 ZMK_COMBO(_DEL,   &kp DEL,    _UR3 _UR4, 0 4)
 ZMK_COMBO(_BKSP,  &kp BKSP,   _MR3 _MR4, 0 4)
 ZMK_COMBO(_ENTER, &kp ENTER,  _MR2 _MR3, 0 4)

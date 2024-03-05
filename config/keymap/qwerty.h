@@ -16,8 +16,8 @@
 #define _S &kp S
 #define _D &kp D
 #define _F &kp F
-#define _G &kp G
-#define _H &kp H
+#define _G &hold_tap LGUI G
+#define _H &hold_tap LGUI H
 #define _J &kp J
 #define _K &kp K
 #define _L &kp L
