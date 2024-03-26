@@ -32,7 +32,7 @@ ZMK_LAYER(NO-NUM,
       _1_EXCL  _1_DQT   _1_LPAR  _1_RPAR  _1_DOLLAR  _1_MINUS _N4      _N5      _N6     _N0
       _1_STAR  _1_CARET _1_LBKT  _1_RBKT  _          _        _N1      _N2      _N3     _1_PRCNT
 //  ╰────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────╯
-                        _        _        _          _        _        _
+                        _        _SPACE   _          _        _        _
 )
 
 ZMK_LAYER(NO-NAV,
@@ -41,7 +41,7 @@ ZMK_LAYER(NO-NAV,
       _1_PIPE  _1_SQT   _1_LT    _1_GT    _1_AMPS    _LEFT    _DOWN    _UP      _RIGHT   _PSCRN
       _1_HASH  _1_TILDE _1_GRAVE _1_ACUTE _          _        _LSHIFT  _LCTRL   _LALT    _RALT
 //  ╰────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────╯
-                        _        _        _          _        _1_2ROOT _
+                        _        _SPACE   _          _        _1_2ROOT _
 )
 
 ZMK_LAYER(FUNC,
@@ -50,7 +50,7 @@ ZMK_LAYER(FUNC,
       _        _        _        _        _          _        _        _        _        _
       _        _        _        _        _          _        _        _        _        _
 //  ╰────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────╯
-                        _        _        _          _        _        _
+                        _        _SPACE   _          _        _        _
 )
 
 ZMK_LAYER(EN,
@@ -68,7 +68,7 @@ ZMK_LAYER(EN-NUM,
       _0_EXCL  _0_DQT   _0_LPAR  _0_RPAR  _0_DOLLAR  _0_MINUS _N4      _N5      _N6     _
       _0_STAR  _0_CARET _0_LBKT  _0_RBKT  _          _        _N1      _N2      _N3     _
 //  ╰────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────╯
-                        _        _        _          _        _        _
+                        _        _SPACE   _          _        _        _
 )
 
 ZMK_LAYER(EN-NAV,
@@ -77,5 +77,5 @@ ZMK_LAYER(EN-NAV,
       _0_PIPE  _0_SQT   _0_LT    _0_GT    _0_AMPS    _LEFT    _DOWN    _UP      _RIGHT   _PSCRN
       _0_HASH  _0_TILDE _0_GRAVE _0_HASH2 _          _        _LSHIFT  _LCTRL   _LALT    _RALT
 //  ╰────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────╯
-                        _        _        _          _        _0_2ROOT _
+                        _        _SPACE   _          _        _0_2ROOT _
 )
