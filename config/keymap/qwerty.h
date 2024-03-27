@@ -26,9 +26,9 @@
 #define _X &hold_tap LALT X
 #define _C &hold_tap LCTRL C
 #define _V &hold_tap LSHIFT V
-#define _B &hold_tap LGUI B
-#define _N &hold_tap LGUI N
-#define _M &hold_tap LSHIFT M
+#define _B &kp B
+#define _N &hold_tap LSHIFT N
+#define _M &kp M
 
 ZMK_MOD_PAIR(__0_COMMA, COMMA, LCTRL, SEMI)
 #define _0_COMMA &__0_COMMA
