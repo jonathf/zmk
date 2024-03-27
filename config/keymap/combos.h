@@ -33,9 +33,9 @@ combo_b(4, &kp B)
 combo_b(5, &kp UNDER)
 
 #define combo_n(layer, key) ZMK_COMBO(_N_ ## layer, key, _LR2 _LR3, layer)
-combo_n(0, &kp N)
+combo_n(0, &kp M)
 combo_n(1, &kp N0)
-combo_n(4, &kp N)
+combo_n(4, &kp M)
 combo_n(5, &kp N0)
 
 #define combo_ae(layer, key) ZMK_COMBO(_AE_ ## layer, key, _LR3 _LR4, layer)
