@@ -9,6 +9,9 @@
 #define _BT5 &bt BT_SEL 5
 #define _BTCLR &bt BT_CLR
 
+#define _VOLUP &kp C_VOL_UP
+#define _VOLDN &kp C_VOL_DN
+
 #define _F1 &kp F1
 #define _F2 &kp F2
 #define _F3 &kp F3

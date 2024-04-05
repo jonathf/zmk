@@ -1,14 +1,14 @@
-// Copyright (c) 2024 The ZMK Contributors
+// Copyright (c) 2023 The ZMK Contributors
 // SPDX-License-Identifier: MiT
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define HOST_OS 2
 
-#include "keymap/corne.h"
+#include "keymap/hummingbird.h"
 #include "keymap/helper.h"
 #include "keymap/qwerty.h"
 #include "keymap/1234.h"
@@ -19,63 +19,64 @@
 
 ZMK_LAYER(NO,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-    _ _Q       _W       _E       _R       _T         _Y       _U       _I       _O       _P     _
-    _ _A       _S       _D       _F       _G         _H       _J       _K       _L       _      _
-    _ _Z       _X       _C       _V       _B         _N       _M       _1_COMMA _1_DOT   _1_FSLH _
+      _Q       _W       _E       _R       _T         _Y       _U       _I       _O       _P
+      _A       _S       _D       _F       _G         _H       _J       _K       _L       _1_FSLH
+               _X       _C       _V                           _N       _1_COMMA _1_DOT
 //  ╰────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────╯
-                        _        _1_CAPS  _SPACE     _1_2NUM  _1_2NAV  _
+                        _1_CAPS  _SPACE                       _1_2NUM  _1_2NAV
 )
 
 ZMK_LAYER(NO-NUM,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-    _ _1_EXCL  _1_AT    _1_LBRC  _1_RBRC  _1_EQUAL   _1_PLUS  _N7      _N8      _N9     _1_AA   _
-    _ _1_STAR  _1_DQT   _1_LPAR  _1_RPAR  _1_DOLLAR  _1_MINUS _N4      _N5      _N6     _1_OE   _
-    _ _1_PRCNT _1_CARET _1_LBKT  _1_RBKT  _1_UNDER   _N0      _N1      _N2      _N3     _1_AE   _
+      _1_EXCL  _1_AT    _1_LBRC  _1_RBRC  _1_EQUAL   _1_PLUS  _N7      _N8      _N9     _N0
+      _1_STAR  _1_DQT   _1_LPAR  _1_RPAR  _1_DOLLAR  _1_MINUS _N4      _N5      _N6     _1_UNDER
+               _1_CARET _1_LBKT  _1_RBKT                      _N1      _N2      _N3
 //  ╰────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────╯
-                        _        _        _SPACE     _        _        _
+                        _        _SPACE                       _        _
 )
 
 ZMK_LAYER(NO-NAV,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-    _ _1_PIPE  _1_PARA  _1_LDANG _1_RDANG _1_QMARK   _HOME    _PG_DN   _PG_UP   _END     _      _
-    _ _1_HASH  _1_SQT   _1_LT    _1_GT    _1_AMPS    _LEFT    _DOWN    _UP      _RIGHT   _      _
-    _ _1_EURO  _1_TILDE _1_GRAVE _1_ACUTE _LGUI      _        _        _        _        _      _
+      _1_PIPE  _1_PARA  _1_LDANG _1_RDANG _1_QMARK   _HOME    _PG_DN   _PG_UP   _END     _PSCRN
+      _1_HASH  _1_SQT   _1_LT    _1_GT    _1_AMPS    _LEFT    _DOWN    _UP      _RIGHT   _1_PRCNT
+               _1_TILDE _1_GRAVE _1_ACUTE                     _        _        _
 //  ╰────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────╯
-                        _        _        _SPACE     _1_2ROOT _        _
+                        _        _SPACE                       _1_2ROOT _
 )
 
 ZMK_LAYER(FUNC,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-    _ _        _BT0     _BT1     _BT3     _BTCLR     _F12     _F7      _F8      _F9      _      _
-    _ _        _        _        _        _          _F11     _F4      _F5      _F6      _      _
-    _ _        _        _        _        _          _F10     _F1      _F2      _F3      _      _
+      _        _BT0     _BT1     _BT3     _BTCLR     _        _        _        _        _
+      _        _        _        _        _          _        _        _        _        _
+               _        _        _        _          _        _        _        _
 //  ╰────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────╯
-                        _        _        _          _        _        _
+                        _        _SPACE                       _        _
 )
 
 ZMK_LAYER(EN,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-    _ _Q       _W       _E       _R       _T         _Y       _U       _I       _O       _P     _
-    _ _A       _S       _D       _F       _G         _H       _J       _K       _L       _      _
-    _ _Z       _X       _C       _V       _B         _N       _M       _0_COMMA _0_DOT   _0_FSLH _
+      _Q       _W       _E       _R       _T         _Y       _U       _I       _O       _P
+      _A       _S       _D       _F       _G         _H       _J       _K       _L       _0_FSLH
+               _X       _C       _V       _          _        _M       _0_COMMA _0_DOT
 //  ╰────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────╯
-                        _        _0_CAPS  _SPACE     _0_2NUM  _0_2NAV  _
+                        _0_CAPS  _SPACE                       _0_2NUM  _0_2NAV
 )
 
 ZMK_LAYER(EN-NUM,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-    _ _0_EXCL  _0_AT    _0_LBRC  _0_RBRC  _0_EQUAL   _0_PLUS  _N7      _N8      _N9     _0_AA   _
-    _ _0_STAR  _0_DQT   _0_LPAR  _0_RPAR  _0_DOLLAR  _0_MINUS _N4      _N5      _N6     _0_OE   _
-    _ _0_PRCNT _0_CARET _0_LBKT  _0_RBKT  _0_UNDER   _N0      _N1      _N2      _N3     _0_AE   _
+      _0_EXCL  _0_AT    _0_LBRC  _0_RBRC  _0_EQUAL   _0_PLUS  _N7      _N8      _N9     _N0
+      _0_STAR  _0_DQT   _0_LPAR  _0_RPAR  _0_DOLLAR  _0_MINUS _N4      _N5      _N6     _0_UNDER
+               _0_CARET _0_LBKT  _0_RBKT                      _N1      _N2      _N3
 //  ╰────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────╯
-                        _        _        _          _        _        _
+                        _        _SPACE                       _        _
 )
 
 ZMK_LAYER(EN-NAV,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-    _ _0_PIPE  _0_PARA  _0_LDANG _0_RDANG _0_QMARK   _HOME    _PG_DN   _PG_UP   _END     _PSCRN _
-    _ _0_HASH  _0_SQT   _0_LT    _0_GT    _0_AMPS    _LEFT    _DOWN    _UP      _RIGHT   _      _
-    _ _0_EURO  _0_TILDE _0_GRAVE _0_HASH2 _0_BSLH2   _LGUI    _LSHIFT  _LCTRL   _LALT    _RALT  _
+      _0_PIPE  _0_PARA  _0_LDANG _0_RDANG _0_QMARK   _HOME    _PG_DN   _PG_UP   _END     _PSCRN
+      _0_HASH  _0_SQT   _0_LT    _0_GT    _0_AMPS    _LEFT    _DOWN    _UP      _RIGHT   _
+               _0_TILDE _0_GRAVE _0_HASH2                     _        _        _
 //  ╰────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────╯
-                        _        _        _          _0_2ROOT _        _
+                        _        _SPACE                       _0_2ROOT _
 )
+
