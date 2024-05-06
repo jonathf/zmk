@@ -160,10 +160,7 @@
 #define ZMK_HOLDTAP(name, type1, type2) \
   ZMK_BEHAVIOR(name, hold_tap, \
     flavor="tap-preferred"; \
-    tapping-term-ms=<200>; \
-    quick-tap-ms=<100>; \
-    global-quick-tap; \
-    hold-trigger-on-release; \
+    tapping-term-ms=<180>; \
     bindings = <&type1>, <&type2>; \
   )
 

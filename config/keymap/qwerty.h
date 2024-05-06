@@ -16,8 +16,8 @@
 #define _S &kp S
 #define _D &kp D
 #define _F &kp F
-#define _G &hold_tap LGUI G
-#define _H &hold_tap LGUI H
+#define _G &kp G
+#define _H &kp H
 #define _J &kp J
 #define _K &kp K
 #define _L &kp L
@@ -26,9 +26,9 @@
 #define _X &hold_tap LALT X
 #define _C &hold_tap LCTRL C
 #define _V &hold_tap LSHIFT V
-#define _B &kp B
-#define _N &hold_tap LSHIFT N
-#define _M &kp M
+#define _B &hold_tap LGUI B
+#define _N &hold_tap LGUI N
+#define _M &hold_tap LSHIFT M
 
 ZMK_MOD_PAIR(__0_COMMA, COMMA, LCTRL, SEMI)
 #define _0_COMMA &__0_COMMA
