@@ -18,6 +18,7 @@ combo_oe(4, _0_OE)
 
 #define combo_aa(layer, key) ZMK_COMBO(_AA_ ## layer, key, _UL3 _UL2, layer)
 combo_aa(0, _1_AA)
+combo_aa(1, &kp LS(FSLH))
 combo_aa(4, _0_AA)
 
 #define combo_z(layer, key) ZMK_COMBO(_Z_ ## layer, key, _LL3 _LL4, layer)
