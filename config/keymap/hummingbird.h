@@ -2,9 +2,9 @@
       ╭────┬────┬────┬────╮  ╭────┬────┬────┬────╮
       0    1    2    3    4  5    6    7    8    9
      10   11   12   13   14 15   16   17   18   19
-          20   21   22   23 24   25   26   27
+          20   21   22           23   24   25
       ╰────┴────┴────┴────╯  ╰────┴────┴────┴────╯
-                    28   29 30   31
+                    26   27 28   29
 */
 #pragma once
 
@@ -33,13 +33,11 @@
 #define _LL4 20
 #define _LL3 21
 #define _LL2 22
-#define _LL1 23
-#define _LR1 24
-#define _LR2 25
-#define _LR3 26
-#define _LR4 27
+#define _LR2 23
+#define _LR3 24
+#define _LR4 25
 
-#define _TL2 28
-#define _TL1 29
-#define _TR1 30
-#define _TR2 31
+#define _TL2 26
+#define _TL1 27
+#define _TR1 28
+#define _TR2 29

@@ -22,7 +22,7 @@ combo_aa(4, _0_AA)
 
 #define combo_z(layer, key) ZMK_COMBO(_Z_ ## layer, key, _LL3 _LL4, layer)
 combo_z(0, &kp Z)
-combo_z(1, &kp PRCNT)
+combo_z(1, &kp LS(N5))
 combo_z(4, &kp Z)
 combo_z(5, &kp PRCNT)
 
