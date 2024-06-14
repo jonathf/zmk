@@ -37,8 +37,8 @@ ZMK_LAYER(NO-NUM,
 
 ZMK_LAYER(NO-NAV,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-      _1_PIPE  _1_PARA  _1_LDANG _1_RDANG _1_QMARK   _HOME    _PG_DN   _PG_UP   _END     _PSCRN
-      _1_HASH  _1_SQT   _1_LT    _1_GT    _1_AMPS    _LEFT    _DOWN    _UP      _RIGHT   _1_PRCNT
+      _1_HASH  _1_PARA  _1_LDANG _1_RDANG _1_QMARK   _HOME    _PG_DN   _PG_UP   _END     _PSCRN
+      _1_SEMI  _1_SQT   _1_LT    _1_GT    _1_AMPS    _LEFT    _DOWN    _UP      _RIGHT   _1_PRCNT
                _1_TILDE _1_GRAVE _1_ACUTE                     _        _        _
 //  ╰────────┴────────┼────────┼────────┼────────┤ ├────────┼────────┼────────┼────────┴────────╯
                         _        _SPACE                       _1_2ROOT _

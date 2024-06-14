@@ -34,11 +34,11 @@ ZMK_UNICODE_PAIR(__2_AA, N0, N0, E, N5, N0, N0, C, N5)
 #define _1_LPAR &kp LS(N8)
 #define _0_RPAR &kp RPAR
 #define _1_RPAR &kp LS(N9)
-#define _0_DOLLAR &kp DOLLAR
-#define _1_DOLLAR &kp LS(N4)
+#define _0_DOLLAR &hold_tap LGUI DOLLAR
+#define _1_DOLLAR &hold_tap LGUI LS(N4)
 
-#define _0_MINUS &kp MINUS
-#define _1_MINUS &kp FSLH
+#define _0_MINUS &hold_tap LGUI MINUS
+#define _1_MINUS &hold_tap LGUI FSLH
 
 #define _N4 &kp N4
 #define _N5 &kp N5
@@ -49,6 +49,8 @@ ZMK_UNICODE_PAIR(__2_AA, N0, N0, E, N5, N0, N0, C, N5)
 ZMK_UNICODE_PAIR(__2_OE, N0, N0, F, N8, N0, N0, D, N8)
 #define _2_OE &__2_OE
 
+#define _0_SEMI &hold_tap RALT SEMI
+#define _1_SEMI &hold_tap RALT LS(COMMA)
 #define _0_PRCNT &hold_tap RALT PRCNT
 #define _1_PRCNT &hold_tap RALT LS(N5)
 
