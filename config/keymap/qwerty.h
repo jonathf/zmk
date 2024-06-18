@@ -22,11 +22,12 @@
 #define _K &kp K
 #define _L &kp L
 
-#define _B &hold_tap RALT B
-#define _Z &hold_tap RALT Z
-#define _X &hold_tap LALT X
-#define _C &hold_tap LCTRL C
-#define _V &hold_tap LSHIFT V
+#define _B &hold_tap LSHIFT B
+#define _Z &kp Z
+#define _X &hold_tap RALT X
+#define _C &hold_tap LALT C
+#define _V &hold_tap LCTRL V
+
 #define _N &hold_tap LSHIFT N
 #define _M &hold_tap LCTRL M
 
