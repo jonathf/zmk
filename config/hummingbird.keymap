@@ -49,6 +49,8 @@ ZMK_COMBO(_Z_5,   &kp PRCNT,  _LL3 _LL4, 5)
 
 ZMK_COMBO(_AAA1,  _1_AA,      _UL2 _UL3, 0)
 ZMK_COMBO(_AAA0,  _0_AA,      _UL2 _UL3, 4)
+ZMK_COMBO(_AAA2,  _1_AA,      _LL2 _LL3, 0)
+ZMK_COMBO(_AAA3,  _0_AA,      _LL2 _LL3, 4)
 ZMK_COMBO(_AE1,   _1_AE,      _LR2 _LR3, 0)
 ZMK_COMBO(_AE0,   _0_AE,      _LR2 _LR3, 4)
 ZMK_COMBO(_OE1,   _1_OE,      _LR3 _LR4, 0)
