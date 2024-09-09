@@ -2,7 +2,7 @@
 
 ZMK_COMBO(_Q_0,   _Q,         _UL3 _UL4, 0)
 ZMK_COMBO(_Q_1,   _1_EXCL,    _UL3 _UL4, 1)
-ZMK_COMBO(_Q_2,   _1_PIPE,    _UL3 _UL4, 2)
+ZMK_COMBO(_Q_1,   _1_PIPE,    _UL3 _UL4, 2)
 
 ZMK_COMBO(_Z_0,   &kp Z,      _LL3 _LL4, 0)
 ZMK_COMBO(_Z_1,   &kp LS(N5), _LL3 _LL4, 1)

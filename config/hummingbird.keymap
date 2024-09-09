@@ -1,5 +1,24 @@
 // Copyright (c) 2023 The ZMK Contributors
 // SPDX-License-Identifier: MiT
+//
+//       Q   Å              ins del
+//      esc tab             cr  bs
+//       Z                   Æ   Ø
+//     W   E   R   T   Y   U   I   O
+// A   S   D   F   G   H   J   K   L   P
+// X   C   V   B           N   M   .:  /\
+//
+//
+//       !
+//     @   {   }   =   +   7   8   9
+// *   "   (   )   $   -   4   5   6   0
+// ,   ^   [   ]           1   2   3   _
+//
+//
+//       |
+//     §   «   »   ?   ho  pd  pu  en
+// #   '   <   >   &   le  do  up  ri
+// ;   ~   `   ´                       %
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -15,7 +34,35 @@
 #include "keymap/navigate.h"
 #include "keymap/function.h"
 #include "keymap/thumbs.h"
-#include "keymap/combos.h"
+
+ZMK_COMBO(_Q_0,   _Q,         _UL3 _UL4, 0)
+ZMK_COMBO(_Q_1,   _1_EXCL,    _UL3 _UL4, 1)
+ZMK_COMBO(_Q_2,   _1_PIPE,    _UL3 _UL4, 2)
+ZMK_COMBO(_Q_4,   _Q,         _UL3 _UL4, 4)
+ZMK_COMBO(_Q_5,   _0_EXCL,    _UL3 _UL4, 5)
+ZMK_COMBO(_Q_6,   _0_PIPE,    _UL3 _UL4, 6)
+
+ZMK_COMBO(_Z_0,   &kp Z,      _LL3 _LL4, 0)
+ZMK_COMBO(_Z_1,   &kp LS(N5), _LL3 _LL4, 1)
+ZMK_COMBO(_Z_4,   &kp Z,      _LL3 _LL4, 4)
+ZMK_COMBO(_Z_5,   &kp PRCNT,  _LL3 _LL4, 5)
+
+ZMK_COMBO(_AAA1,  _1_AA,      _UL2 _UL3, 0)
+ZMK_COMBO(_AAA0,  _0_AA,      _UL2 _UL3, 4)
+ZMK_COMBO(_AE1,   _1_AE,      _LR2 _LR3, 0)
+ZMK_COMBO(_AE0,   _0_AE,      _LR2 _LR3, 4)
+ZMK_COMBO(_OE1,   _1_OE,      _LR3 _LR4, 0)
+ZMK_COMBO(_OE0,   _0_OE,      _LR3 _LR4, 4)
+
+ZMK_COMBO(_ESC,   &kp ESC,    _ML3 _ML4, 0 1 2 3 4 5 6)
+ZMK_COMBO(_TAB,   &kp TAB,    _ML2 _ML3, 0 1 2 3 4 5 6)
+/* ZMK_COMBO(_INS,   &kp INS,    _UR2 _UR3, 0) */
+/* ZMK_COMBO(_DEL,   &kp DEL,    _UR3 _UR4, 0) */
+
+ZMK_COMBO(_BKSP,  &kp BKSP,   _MR3 _MR4, 0 1 2 3 4 5 6)
+ZMK_COMBO(_DEL,   &kp DEL,    _UR3 _UR4, 0 1 2 3 4 5 6)
+ZMK_COMBO(_ENTER, &kp INS,    _MR2 _MR3, 0 1 2 3 4 5 6)
+ZMK_COMBO(_ENTER, &kp ENTER,  _MR2 _MR3, 0 1 2 3 4 5 6)
 
 ZMK_LAYER(NO,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
@@ -41,14 +88,14 @@ ZMK_LAYER(NO-NAV,
       _1_SEMI  _1_SQT   _1_LT    _1_GT    _1_AMPS    _LEFT    _DOWN    _UP      _RIGHT   _1_PRCNT
                _1_TILDE _1_GRAVE _1_ACUTE                     _        _        _
 //           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
-                                 _        _SPACE     _1_2ROOT _
+                                 _0_2ROOT _SPACE     _        _
 )
 
 ZMK_LAYER(FUNC,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
       _        _        _        _        _          _        _        _        _        _BTCLR
       _        _        _        _        _          _        _        _        _        _
-               _        _        _                            _BT0     _BT1     _BT2
+               _      _1_ACUTE_ _1_GRAVE_                    _BT0     _BT1     _BT2
 //           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
                                  _        _SPACE     _        _
 )
@@ -57,15 +104,15 @@ ZMK_LAYER(EN,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
       _Q       _W       _E       _R       _T         _Y       _U       _I       _O       _P
       _A       _S       _D       _F       _G         _H       _J       _K       _L       _0_FSLH
-               _X       _C       _V       _          _        _M       _0_COMMA _0_DOT
+               _X       _C       _V                           _N       _M       _0_DOT
 //           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
                                  _0_CAPS  _SPACE     _0_2NUM  _0_2NAV
 )
 
 ZMK_LAYER(EN-NUM,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-      _0_EXCL  _0_AT    _0_LBRC  _0_RBRC  _0_EQUAL   _0_PLUS  _N7      _N8      _N9     _N0
-      _0_STAR  _0_DQT   _0_LPAR  _0_RPAR  _0_DOLLAR  _0_MINUS _N4      _N5      _N6     _0_UNDER
+      _0_STAR  _0_AT    _0_LBRC  _0_RBRC  _0_EQUAL   _0_PLUS  _N7      _N8      _N9     _N0
+      _0_COMMA _0_DQT   _0_LPAR  _0_RPAR  _0_DOLLAR  _0_MINUS _N4      _N5      _N6     _0_UNDER
                _0_CARET _0_LBKT  _0_RBKT                      _N1      _N2      _N3
 //           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
                                  _        _SPACE     _        _
@@ -73,10 +120,10 @@ ZMK_LAYER(EN-NUM,
 
 ZMK_LAYER(EN-NAV,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-      _0_PIPE  _0_PARA  _0_LDANG _0_RDANG _0_QMARK   _HOME    _PG_DN   _PG_UP   _END     _PSCRN
-      _0_HASH  _0_SQT   _0_LT    _0_GT    _0_AMPS    _LEFT    _DOWN    _UP      _RIGHT   _
+      _0_HASH  _0_PARA  _0_LDANG _0_RDANG _0_QMARK   _HOME    _PG_DN   _PG_UP   _END     _PSCRN
+      _0_SEMI  _0_SQT   _0_LT    _0_GT    _0_AMPS    _LEFT    _DOWN    _UP      _RIGHT   _0_PRCNT
                _0_TILDE _0_GRAVE _0_HASH2                     _        _        _
 //           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
-                                 _        _SPACE     _0_2ROOT _
+                                 _1_2ROOT _SPACE     _        _
 )
 

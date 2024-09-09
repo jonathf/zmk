@@ -62,10 +62,12 @@ ZMK_UNICODE_SINGLE(__2_EURO, N2, N0, A, C)
 #define _0_GRAVE &hold_tap LCTRL GRAVE
 // #define _1_GRAVE &kp LS(EQUAL)
 ZMK_MOD_NODEAD(_grave, LS(EQUAL))
+#define _1_GRAVE_ &kp LS(EQUAL)
 #define _1_GRAVE &_grave LCTRL 0
 
 #define _0_HASH2 &hold_tap LSHIFT NON_US_HASH
 ZMK_MOD_NODEAD(_acute, EQUAL)
+#define _1_ACUTE_ &kp EQUAL
 #define _1_ACUTE &_acute LSHIFT 0
 ZMK_UNICODE_SINGLE(__2_ACUTE, N0, N0, B, N4)
 #define _2_ACUTE &__2_ACUTE
