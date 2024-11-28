@@ -70,7 +70,7 @@ ZMK_LAYER(NO,
       _X       _S       _D       _F       _G         _H       _J       _K       _L       _0_FSLH
                _C       _V       _B                           _N       _M       _0_DOT
 //           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
-                                 _1_CAPS  _SPACE     _1_2NUM  _1_2NAV
+                                 _0_CAPS  _SPACE     _1_2NUM  _1_2NAV
 )
 
 ZMK_LAYER(NO-NUM,
@@ -106,7 +106,7 @@ ZMK_LAYER(EN,
       _X       _S       _D       _F       _G         _H       _J       _K       _L       _1_FSLH
                _C       _V       _B                           _N       _M       _1_DOT
 //           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
-                                 _0_CAPS  _SPACE     _0_2NUM  _0_2NAV
+                                 _1_CAPS  _SPACE     _0_2NUM  _0_2NAV
 )
 
 ZMK_LAYER(EN-NUM,
