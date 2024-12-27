@@ -24,6 +24,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define HOST_OS 2
 
@@ -93,9 +94,9 @@ ZMK_LAYER(NO-NAV,
 
 ZMK_LAYER(FUNC,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-      _        _        _        _        _          _        _        _        _        _BTCLR
-      _        _        _        _        _          _        _        _        _        _
-               _        _        _                            _BT0     _BT1     _BT2
+      _        _        _        _        _          &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT _
+      _BTCLR   _        _        _        _          &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT _
+               _BT0     _BT1     _BT2                               &mkp LCLK      &mkp MCLK    &mkp RCLK
 //           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
                                  _        _SPACE     _        _
 )
