@@ -60,11 +60,23 @@ ZMK_COMBO(_OE1,   _1_OE,      _LR3 _LR4, 4)
 ZMK_COMBO(_ESC,   &kp ESC,    _ML3 _ML4, 0 1 2 3 4 5 6)
 ZMK_COMBO(_TAB,   &kp TAB,    _ML2 _ML3, 0 1 2 3 4 5 6)
 
-ZMK_COMBO(_BKSP,  &kp BKSP,   _MR3 _MR4, 0 1 2 3 4 5 6)
+ZMK_COMBO(_BKSP1,  &kp BKSP,   _MR3 _MR4, 0 1 2 3 4 5 6)
+ZMK_COMBO(_BKSP2,  &bksp4,   _MR4 _MR5, 0 1 2 3 4 5 6)
 ZMK_COMBO(_DEL,   &kp DEL,    _UR3 _UR4, 0 1 2 3 4 5 6)
 ZMK_COMBO(_INS,   &kp INS,    _UR2 _UR3, 0 1 2 3 4 5 6)
-ZMK_COMBO(_ENTER, &kp ENTER,  _MR2 _MR3, 0 1 2 3 4 5 6)
-ZMK_COMBO(_ENTER, &kp ENTER,  _UR1 _UR2, 0 1 2 3 4 5 6)
+ZMK_COMBO(_ENTER1, &kp ENTER,  _MR2 _MR3, 0 1 2 3 4 5 6)
+ZMK_COMBO(_ENTER2, &kp ENTER,  _UR1 _UR2, 0 1 2 3 4 5 6)
+
+/ {
+    makros {
+      bksp4: bksp4 {
+        compatible = "zmk,behavior-macro";
+        label = "BKSP4";
+        #binding-cells = <0>;
+        bindings = <&macro_tap &kp BKSP &kp BKSP &kp BKSP &kp BKSP>;
+      };
+    };
+};
 
 ZMK_LAYER(NO,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
