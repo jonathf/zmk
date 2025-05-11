@@ -100,7 +100,7 @@ ZMK_LAYER(NO-NAV,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
       _0_HASH  _0_PARA  _0_LDANG _0_RDANG _0_QMARK   _HOME    _PG_DN   _PG_UP   _END     _PSCRN
       _0_SEMI  _0_SQT   _0_LT    _0_GT    _0_AMPS    _LEFT    _DOWN    _UP      _RIGHT   _0_PRCNT
-               _0_TILDE _0_GRAVE _0_HASH2                     _        _        _
+               _0_TILDE _0_GRAVE _0_HASH2                   &kp LSHIFT _0_EXCL  _0_PIPE
 //           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
                                  _0_2ROOT _SPACE     _        _
 )
@@ -136,7 +136,7 @@ ZMK_LAYER(EN-NAV,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
       _1_HASH  _1_PARA  _1_LDANG _1_RDANG _1_QMARK   _HOME    _PG_DN   _PG_UP   _END     _PSCRN
       _1_SEMI  _1_SQT   _1_LT    _1_GT    _1_AMPS    _LEFT    _DOWN    _UP      _RIGHT   _1_PRCNT
-               _1_TILDE _1_GRAVE _1_ACUTE              &kp LSHIFT &kp LCTRL &kp LALT
+               _1_TILDE _1_GRAVE _1_ACUTE                   &kp LSHIFT _1_EXCL  _1_PIPE
 //           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
                                  _1_2ROOT _SPACE     _        _
 )

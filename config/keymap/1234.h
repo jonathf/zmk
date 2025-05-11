@@ -4,7 +4,7 @@
 // %&å¨?0123  %&Å ?=!"
 #pragma once
 
-#define _0_EXCL &kp EXCL
+#define _0_EXCL &hold_tap LCTRL EXCL
 #define _1_EXCL &kp LS(N1)
 #define _0_AT &kp AT
 #define _1_AT &kp BSLH
