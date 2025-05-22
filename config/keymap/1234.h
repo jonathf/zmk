@@ -74,3 +74,4 @@ ZMK_UNICODE_PAIR(__2_OE, N0, N0, F, N8, N0, N0, D, N8)
 #define _1_AE &hold_tap RALT SQT
 ZMK_UNICODE_PAIR(__2_AE, N0, N0, E, N6, N0, N0, C, N6)
 #define _2_AE &__2_AE
+

@@ -36,44 +36,49 @@
 #include "keymap/function.h"
 #include "keymap/thumbs.h"
 
-ZMK_COMBO(_Q_0,   _Q,         _UL3 _UL4, 0)
-ZMK_COMBO(_Q_1,   _0_EXCL,    _UL3 _UL4, 1)
-ZMK_COMBO(_Q_2,   _0_PIPE,    _UL3 _UL4, 2)
-ZMK_COMBO(_Q_4,   _Q,         _UL3 _UL4, 4)
-ZMK_COMBO(_Q_5,   _1_EXCL,    _UL3 _UL4, 5)
-ZMK_COMBO(_Q_6,   _1_PIPE,    _UL3 _UL4, 6)
+ZMK_COMBO(_Q_0,   _Q,         _UL3 _UL4, 0 1 2)
+// ZMK_COMBO(_Q_1,   _0_EXCL,    _UL3 _UL4, 1)
+// ZMK_COMBO(_Q_2,   _0_PIPE,    _UL3 _UL4, 2)
+ZMK_COMBO(_Q_4,   _Q,         _UL3 _UL4, 4 5 6)
+// ZMK_COMBO(_Q_5,   _1_EXCL,    _UL3 _UL4, 5)
+// ZMK_COMBO(_Q_6,   _1_PIPE,    _UL3 _UL4, 6)
 
-ZMK_COMBO(_Z_0,   &kp Z,      _LL3 _LL4, 0)
-ZMK_COMBO(_Z_5,   &kp PRCNT,  _LL3 _LL4, 1)
-ZMK_COMBO(_Z_4,   &kp Z,      _LL3 _LL4, 4)
-ZMK_COMBO(_Z_1,   &kp LS(N5), _LL3 _LL4, 5)
+ZMK_COMBO(_Z_0,   &kp Z,      _LL3 _LL4, 0 1 2)
+// ZMK_COMBO(_Z_5,   &kp PRCNT,  _LL3 _LL4, 1)
+ZMK_COMBO(_Z_4,   &kp Z,      _LL3 _LL4, 4 5 6)
+// ZMK_COMBO(_Z_1,   &kp LS(N5), _LL3 _LL4, 5)
 
-ZMK_COMBO(_AAA0,  _0_AA,      _UL2 _UL3, 0)
-ZMK_COMBO(_AAA1,  _1_AA,      _UL2 _UL3, 4)
-ZMK_COMBO(_AAA3,  _0_AA,      _LL2 _LL3, 0)
-ZMK_COMBO(_AAA2,  _1_AA,      _LL2 _LL3, 4)
-ZMK_COMBO(_AE0,   _0_AE,      _LR2 _LR3, 0)
-ZMK_COMBO(_AE1,   _1_AE,      _LR2 _LR3, 4)
-ZMK_COMBO(_OE0,   _0_OE,      _LR3 _LR4, 0)
-ZMK_COMBO(_OE1,   _1_OE,      _LR3 _LR4, 4)
+ZMK_COMBO(_TTT1,  &ttt,       _UL2 _UL3, 0 1 2 4 5 6)
+ZMK_COMBO(_AAA3,  _0_AA,      _LL2 _LL3, 0 1 2)
+ZMK_COMBO(_AAA2,  _1_AA,      _LL2 _LL3, 4 5 6)
+ZMK_COMBO(_AE0,   _0_AE,      _LR2 _LR3, 0 1 2)
+ZMK_COMBO(_AE1,   _1_AE,      _LR2 _LR3, 4 5 6)
+ZMK_COMBO(_OE0,   _0_OE,      _LR3 _LR4, 0 1 2)
+ZMK_COMBO(_OE1,   _1_OE,      _LR3 _LR4, 4 5 6)
 
 ZMK_COMBO(_ESC,   &kp ESC,    _ML3 _ML4, 0 1 2 3 4 5 6)
 ZMK_COMBO(_TAB,   &kp TAB,    _ML2 _ML3, 0 1 2 3 4 5 6)
 
-ZMK_COMBO(_BKSP1,  &kp BKSP,   _MR3 _MR4, 0 1 2 3 4 5 6)
-ZMK_COMBO(_BKSP2,  &bksp4,   _MR4 _UR5, 0 1 2 3 4 5 6)
+ZMK_COMBO(_BKSP1,  &kp BKSP,  _MR3 _MR4, 0 1 2 3 4 5 6)
+ZMK_COMBO(_BKSP2,  &bksp4,    _LR3 _LR4, 0 1 2 3 4 5 6)
 ZMK_COMBO(_DEL,   &kp DEL,    _UR3 _UR4, 0 1 2 3 4 5 6)
 ZMK_COMBO(_INS,   &kp INS,    _UR2 _UR3, 0 1 2 3 4 5 6)
-ZMK_COMBO(_ENTER1, &kp ENTER,  _MR2 _MR3, 0 1 2 3 4 5 6)
-ZMK_COMBO(_ENTER2, &kp ENTER,  _UR1 _UR2, 0 1 2 3 4 5 6)
+ZMK_COMBO(_ENTER1, &kp ENTER, _MR2 _MR3, 0 1 2 3 4 5 6)
+ZMK_COMBO(_ENTER2, &kp ENTER, _UR1 _UR2, 0 1 2 3 4 5 6)
 
 / {
-    makros {
+    macros {
       bksp4: bksp4 {
         compatible = "zmk,behavior-macro";
         label = "BKSP4";
         #binding-cells = <0>;
         bindings = <&macro_tap &kp BKSP &kp BKSP &kp BKSP &kp BKSP>;
+      };
+      ttt: ttt {
+        compatible = "zmk,behavior-macro";
+        label = "TTT";
+        #binding-cells = <0>;
+        bindings = <&macro_tap &kp TAB &kp TAB &kp TAB &kp TAB>;
       };
     };
 };
