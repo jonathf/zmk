@@ -66,6 +66,12 @@ ZMK_COMBO(_INS,   &kp INS,    _UR2 _UR3, 0 1 2 3 4 5 6)
 ZMK_COMBO(_ENTER1, &kp ENTER, _MR2 _MR3, 0 1 2 3 4 5 6)
 ZMK_COMBO(_ENTER2, &kp ENTER, _UR1 _UR2, 0 1 2 3 4 5 6)
 
+ZMK_COMBO(_GUI,   &kp LGUI,   _MR1 _ML1, 0 1 2 3 4 5 6)
+ZMK_COMBO(_SHIFT, &kp LSHIFT, _LR2 _LL2, 0 1 2 3 4 5 6)
+ZMK_COMBO(_CTRL,  &kp LCTRL,  _LR3 _LL3, 0 1 2 3 4 5 6)
+ZMK_COMBO(_ALT1,  &kp LALT,   _LR4 _LL4, 0 1 2 3 4 5 6)
+ZMK_COMBO(_ALT2,  &kp RALT,   _MR5 _ML5, 0 1 2 3 4 5 6)
+
 / {
     macros {
       bksp4: bksp4 {
