@@ -118,8 +118,8 @@ ZMK_LAYER(NO-NAV,
 
 ZMK_LAYER(FUNC,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-      _        _        _        _        _          &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT _
-      _BTCLR   _        _        _        _          &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT _
+      _F1      _F2      _F3      _F4      _F5        &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT _VOLUP
+      _BTCLR   _F6      _F7      _F8      _F12       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT _VOLDN
                _BT0     _BT1     _BT2                               &mkp LCLK      &mkp MCLK    &mkp RCLK
 //           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
                                  _        _SPACE     _        _
