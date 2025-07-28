@@ -2,7 +2,7 @@
 #pragma once
 
 #define _0_PIPE &hold_tap LALT PIPE
-#define _1_PIPE &kp LA(N7)
+#define _1_PIPE &hold_tap LALT LA(N7)
 
 #define _0_PARA &kp LA(S)
 #define _1_PARA &kp LS(NON_US_BSLH)

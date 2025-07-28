@@ -165,6 +165,7 @@
     global-quick-tap; \
     hold-trigger-on-release; \
     bindings = <&type1>, <&type2>; \
+    require-prior-idle-ms=<80>; \
   )
 
 ZMK_HOLDTAP(layer_tap, sl, kp)
