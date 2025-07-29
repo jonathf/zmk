@@ -66,6 +66,7 @@ ZMK_MOD_NODEAD(_grave, LS(EQUAL))
 #define _1_GRAVE &_grave LCTRL 0
 
 #define _0_HASH2 &hold_tap LSHIFT NON_US_HASH
+#define _0_ACUTE &hold_tap LSHIFT RA(SQT)
 ZMK_MOD_NODEAD(_acute, EQUAL)
 #define _1_ACUTE_ &kp EQUAL
 #define _1_ACUTE &_acute LSHIFT 0
