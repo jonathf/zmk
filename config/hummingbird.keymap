@@ -119,8 +119,8 @@ ZMK_LAYER(NAVIGATION,
 ZMK_LAYER(MOUSE,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
       _        _BRIMIN  _BRIDN   _BRIUP   _BRIMAX    &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT _
-      _        _VOLMUTE _VOLDN   _VOLUP   _          &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT _
-               _        _        _                                  &mkp LCLK      &mkp MCLK    &mkp RCLK
+      _BTCLR   _VOLMUTE _VOLDN   _VOLUP   _          &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT _
+               _BT0     _BT1     _BT2                &mkp LCLK      &mkp MCLK    &mkp RCLK
 //           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
                                  _        _SPACE     _        _2FUNC
 )

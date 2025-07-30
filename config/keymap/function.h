@@ -15,7 +15,7 @@
 
 #define _BRIUP &kp C_BRIGHTNESS_INC
 #define _BRIDN &kp C_BRIGHTNESS_DEC
-#define _BRIMIN &kp LS(C_BRIGHTNESS_INC)
+#define _BRIMIN &kp LS(C_BRIGHTNESS_DEC)
 #define _BRIMAX &kp LS(C_BRIGHTNESS_INC)
 
 #define _F1 &kp F1
