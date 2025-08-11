@@ -12,6 +12,7 @@
 #define _VOLMUTE &kp C_MUTE
 #define _VOLUP &kp C_VOL_UP
 #define _VOLDN &kp C_VOL_DN
+#define _VOLMAX &kp LS(C_VOL_UP)
 
 #define _BRIUP &kp C_BRIGHTNESS_INC
 #define _BRIDN &kp C_BRIGHTNESS_DEC
