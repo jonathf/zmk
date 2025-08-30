@@ -4,7 +4,7 @@
 // %&å¨?0123  %&Å ?=!"
 #pragma once
 
-#define _0_EXCL &hold_tap LCTRL EXCL
+#define _0_EXCL &hmr LCTRL EXCL
 #define _1_EXCL &kp LS(N1)
 #define _0_AT &kp AT
 #define _1_AT &kp BSLH
@@ -34,11 +34,11 @@ ZMK_UNICODE_PAIR(__2_AA, N0, N0, E, N5, N0, N0, C, N5)
 #define _1_LPAR &kp LS(N8)
 #define _0_RPAR &kp RPAR
 #define _1_RPAR &kp LS(N9)
-#define _0_DOLLAR &hold_tap LGUI DOLLAR
-#define _1_DOLLAR &hold_tap LGUI LS(N4)
+#define _0_DOLLAR &hml LGUI DOLLAR
+#define _1_DOLLAR &hml LGUI LS(N4)
 
-#define _0_MINUS &hold_tap LGUI MINUS
-#define _1_MINUS &hold_tap LGUI FSLH
+#define _0_MINUS &hmr LGUI MINUS
+#define _1_MINUS &hmr LGUI FSLH
 
 #define _N4 &kp N4
 #define _N5 &kp N5
@@ -49,26 +49,26 @@ ZMK_UNICODE_PAIR(__2_AA, N0, N0, E, N5, N0, N0, C, N5)
 ZMK_UNICODE_PAIR(__2_OE, N0, N0, F, N8, N0, N0, D, N8)
 #define _2_OE &__2_OE
 
-#define _0_SEMI &hold_tap RALT SEMI
-#define _1_SEMI &hold_tap RALT LS(COMMA)
-#define _0_PRCNT &hold_tap RALT PRCNT
-#define _1_PRCNT &hold_tap RALT LS(N5)
+#define _0_SEMI &hml RALT SEMI
+#define _1_SEMI &hml RALT LS(COMMA)
+#define _0_PRCNT &hmr RALT PRCNT
+#define _1_PRCNT &hmr RALT LS(N5)
 
 #define _0_CARET &hold_tap LALT CARET
 // #define _1_CARET &hold_tap LALT LS(RBRC)
 #define _1_CARET &hold_tap LALT LS(LA(RBRC))
 
-#define _0_LBKT &hold_tap LCTRL LBKT
-#define _1_LBKT &hold_tap LCTRL LA(N8)
-#define _0_RBKT &hold_tap LSHIFT RBKT
-#define _1_RBKT &hold_tap LSHIFT LA(N9)
-#define _0_UNDER &hold_tap RALT UNDER
-#define _1_UNDER &hold_tap RALT LS(FSLH)
+#define _0_LBKT &hml LCTRL LBKT
+#define _1_LBKT &hml LCTRL LA(N8)
+#define _0_RBKT &hml LSHIFT RBKT
+#define _1_RBKT &hml LSHIFT LA(N9)
+#define _0_UNDER &hmr RALT UNDER
+#define _1_UNDER &hmr RALT LS(FSLH)
 
 #define _N0 &kp N0
-#define _N1 &hold_tap LSHIFT N1
-#define _N2 &hold_tap LCTRL N2
-#define _N3 &hold_tap LALT N3
+#define _N1 &hmr LSHIFT N1
+#define _N2 &hmr LCTRL N2
+#define _N3 &hmr LALT N3
 
 #define _0_AE &kp RA(Z)
 #define _1_AE &hold_tap RALT SQT

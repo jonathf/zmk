@@ -16,20 +16,20 @@
 #define _S &kp S
 #define _D &kp D
 #define _F &kp F
-#define _G &hold_tap LGUI G
-#define _H &hold_tap LGUI H
+#define _G &hmr LGUI G
+#define _H &hml LGUI H
 #define _J &kp J
 #define _K &kp K
 #define _L &kp L
 
-#define _B &hmr LSHIFT B
+#define _B &hml LSHIFT B
 #define _Z &kp Z
-#define _X &hold_tap RALT X
-#define _C &hold_tap LALT C
-#define _V &hold_tap LCTRL V
+#define _X &hml RALT X
+#define _C &hml LALT C
+#define _V &hml LCTRL V
 
-#define _N &hold_tap LSHIFT N
-#define _M &hold_tap LCTRL M
+#define _N &hmr LSHIFT N
+#define _M &hmr LCTRL M
 
 ZMK_MOD_PAIR(__0_COMMA, COMMA, RALT, SEMI)
 #define _0_COMMA &__0_COMMA
