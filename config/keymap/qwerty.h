@@ -22,7 +22,7 @@
 #define _K &kp K
 #define _L &kp L
 
-#define _B &hold_tap LSHIFT B
+#define _B &hmr LSHIFT B
 #define _Z &kp Z
 #define _X &hold_tap RALT X
 #define _C &hold_tap LALT C
