@@ -86,13 +86,26 @@ ZMK_COMBO(_ALT2,  &kp RALT,   _MR5 _ML5, 0 1 2 3 4 5 6 7)
         #binding-cells = <0>;
         bindings = <&macro_tap &kp TAB &kp TAB &kp TAB &kp TAB>;
       };
+      _hh: _hh {
+        compatible = "zmk,behavior-macro";
+        label = "_HH";
+        #binding-cells = <0>;
+        bindings = <&macro_tap &kp H &kp H>;
+      };
+      _h_: _h_ {
+        compatible = "zmk,behavior-tap-dance";
+        label = "_HH";
+        #binding-cells = <0>;
+        tapping-term-ms = <100>;
+        bindings = <&hold_tap LGUI H>, <&_hh>;
+      };
     };
 };
 
 ZMK_LAYER(BASE,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
       _A       _W       _E       _R       _T         _Y       _U       _I       _O       _P
-      _X       _S       _D       _F       _G         _H       _J       _K       _L       _0_FSLH
+      _X       _S       _D       _F       _G         &_h_     _J       _K       _L       _0_FSLH
                _C       _V       _B                           _N       _M       _0_DOT
 //           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
                                  _0_CAPS  _SPACE     _1_2NUM  _1_2NAV
