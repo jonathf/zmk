@@ -26,10 +26,10 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define HOST_OS 2
-
 #include "hummingbird/layout.h"
 #include "hummingbird/define.h"
+
+#define HOST_OS 2
 
 #include "keymap/helper.h"
 #include "keymap/qwerty.h"
@@ -39,17 +39,7 @@
 #include "keymap/thumbs.h"
 
 #include "hummingbird/combo.h"
-
-
-
-ZMK_LAYER(BASE,
-//  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-      _A       _W       _E       _R       _T         _Y       _U       _I       _O       _P
-      _X       _S       _D       _F       _G         _H       _J       _K       _L       _0_FSLH
-               _C       _V       _B                           _N       _M       _0_DOT
-//           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
-                                 _0_CAPS  _SPACE     _1_2NUM  _1_2NAV
-)
+#include "hummingbird/layer0.h"
 
 ZMK_LAYER(NUMERIC,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
