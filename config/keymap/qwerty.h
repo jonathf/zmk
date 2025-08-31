@@ -1,8 +1,6 @@
 // HOST_OS: 0 us-int, 1 mac-no 2 mac-unicode
 #pragma once
 
-ZMK_MOD_PAIR(__0_COMMA, COMMA, RALT, SEMI)
-#define _0_COMMA &__0_COMMA
 ZMK_MOD_PAIR(__1_COMMA, COMMA, RALT, LS(COMMA))
 #define _1_COMMA &__1_COMMA
 

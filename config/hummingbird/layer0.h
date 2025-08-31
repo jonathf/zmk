@@ -27,23 +27,23 @@
 #define _N &hmr LSHIFT N
 #define _M &hmr LCTRL M
 
-ZMK_MOD_PAIR(__dot_us, DOT, LALT, LS(SEMI))
-#define _DOT_US &__dot_us
-ZMK_MOD_PAIR(__fslh_us, FSLH, RALT, BSLH)
-#define _FSLH_US &__fslh_us
+ZMK_MOD_PAIR(__dot, DOT, LALT, LS(SEMI))
+#define _DOT &__dot
+ZMK_MOD_PAIR(__fslh, FSLH, RALT, BSLH)
+#define _FSLH &__fslh
 
 ZMK_BEHAVIOR(__capsword_us, caps_word, continue-list = <UNDER MINUS BKSP DEL>;)
 ZMK_HOLDTAP(__caps_us, mo, __caps_us)
 #define _CAPS_US &__caps_us 3 0
-#define _SPC_US &hold_tap LA(LC(LGUI)) SPACE
+#define _SPACE &hold_tap LA(LC(LGUI)) SPACE
 #define _JUMP_01 &sl 1
 #define _JUMP_02 &sl 2
 
 ZMK_LAYER(LAYER0,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
       _A       _W       _E       _R       _T         _Y       _U       _I       _O       _P
-      _X       _S       _D       _F       _G         _H       _J       _K       _L       _FSLH_US
-               _C       _V       _B                           _N       _M       _DOT_US
+      _X       _S       _D       _F       _G         _H       _J       _K       _L       _FSLH
+               _C       _V       _B                           _N       _M       _DOT
 //           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
-                                _CAPS_US _SPC_US    _JUMP_01 _JUMP_02
+                                _CAPS_US _SPACE     _JUMP_01 _JUMP_02
 )

@@ -40,15 +40,7 @@
 
 #include "hummingbird/combo.h"
 #include "hummingbird/layer0.h"
-
-ZMK_LAYER(NUMERIC,
-//  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-      _0_STAR  _0_AT    _0_LBRC  _0_RBRC  _0_EQUAL   _0_PLUS  _N7      _N8      _N9     _N0
-      _0_COMMA _0_DQT   _0_LPAR  _0_RPAR  _0_DOLLAR  _0_MINUS _N4      _N5      _N6     _0_UNDER
-               _0_CARET _0_LBKT  _0_RBKT                      _N1      _N2      _N3
-//           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
-                                 _        _SPACE     _        _
-)
+#include "hummingbird/layer1.h"
 
 ZMK_LAYER(NAVIGATION,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮

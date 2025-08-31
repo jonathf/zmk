@@ -6,16 +6,11 @@
 
 #define _0_EXCL &hmr LCTRL EXCL
 #define _1_EXCL &kp LS(N1)
-#define _0_AT &kp AT
 #define _1_AT &kp BSLH
-#define _0_LBRC &kp LBRC
 #define _1_LBRC &kp LA(LS(N8))
-#define _0_RBRC &kp RBRC
 #define _1_RBRC &kp LA(LS(N9))
-#define _0_EQUAL &kp EQUAL
 #define _1_EQUAL &kp LS(N0)
 
-#define _0_PLUS &kp PLUS
 #define _1_PLUS &kp MINUS
 #define _N7 &kp N7
 #define _N8 &kp N8
@@ -26,18 +21,12 @@
 ZMK_UNICODE_PAIR(__2_AA, N0, N0, E, N5, N0, N0, C, N5)
 #define _2_AA &__2_AA
 
-#define _0_STAR &kp STAR
 #define _1_STAR &kp LS(BSLH)
-#define _0_DQT &kp DQT
 #define _1_DQT &kp LS(N2)
-#define _0_LPAR &kp LPAR
 #define _1_LPAR &kp LS(N8)
-#define _0_RPAR &kp RPAR
 #define _1_RPAR &kp LS(N9)
-#define _0_DOLLAR &hml LGUI DOLLAR
 #define _1_DOLLAR &hml LGUI LS(N4)
 
-#define _0_MINUS &hmr LGUI MINUS
 #define _1_MINUS &hmr LGUI FSLH
 
 #define _N4 &kp N4
@@ -54,15 +43,11 @@ ZMK_UNICODE_PAIR(__2_OE, N0, N0, F, N8, N0, N0, D, N8)
 #define _0_PRCNT &hmr RALT PRCNT
 #define _1_PRCNT &hmr RALT LS(N5)
 
-#define _0_CARET &hold_tap LALT CARET
 // #define _1_CARET &hold_tap LALT LS(RBRC)
 #define _1_CARET &hold_tap LALT LS(LA(RBRC))
 
-#define _0_LBKT &hml LCTRL LBKT
 #define _1_LBKT &hml LCTRL LA(N8)
-#define _0_RBKT &hml LSHIFT RBKT
 #define _1_RBKT &hml LSHIFT LA(N9)
-#define _0_UNDER &hmr RALT UNDER
 #define _1_UNDER &hmr RALT LS(FSLH)
 
 #define _N0 &kp N0
