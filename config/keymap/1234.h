@@ -4,7 +4,6 @@
 // %&å¨?0123  %&Å ?=!"
 #pragma once
 
-#define _0_EXCL &hmr LCTRL EXCL
 #define _1_EXCL &kp LS(N1)
 #define _1_AT &kp BSLH
 #define _1_LBRC &kp LA(LS(N8))
@@ -38,9 +37,7 @@ ZMK_UNICODE_PAIR(__2_AA, N0, N0, E, N5, N0, N0, C, N5)
 ZMK_UNICODE_PAIR(__2_OE, N0, N0, F, N8, N0, N0, D, N8)
 #define _2_OE &__2_OE
 
-#define _0_SEMI &hml RALT SEMI
 #define _1_SEMI &hml RALT LS(COMMA)
-#define _0_PRCNT &hmr RALT PRCNT
 #define _1_PRCNT &hmr RALT LS(N5)
 
 // #define _1_CARET &hold_tap LALT LS(RBRC)

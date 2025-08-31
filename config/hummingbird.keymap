@@ -41,15 +41,7 @@
 #include "hummingbird/combo.h"
 #include "hummingbird/layer0.h"
 #include "hummingbird/layer1.h"
-
-ZMK_LAYER(NAVIGATION,
-//  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-      _0_HASH  _0_PARA  _0_LDANG _0_RDANG _0_QMARK   _HOME    _PG_DN   _PG_UP   _END     _PSCRN
-      _0_SEMI  _0_SQT   _0_LT    _0_GT    _0_AMPS    _LEFT    _DOWN    _UP      _RIGHT   _0_PRCNT
-               _0_TILDE _0_GRAVE _0_ACUTE                   &kp LSHIFT _0_EXCL  _0_PIPE
-//           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
-                                 _0_2ROOT _SPACE     _        _
-)
+#include "hummingbird/layer2.h"
 
 ZMK_LAYER(MOUSE,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮

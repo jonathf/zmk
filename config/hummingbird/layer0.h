@@ -1,36 +1,38 @@
 #pragma once
 
+#define _A &kp A
 #define _W &kp W
 #define _E &kp E
 #define _R &kp R
 #define _T &kp T
+
 #define _Y &kp Y
 #define _U &kp U
 #define _I &kp I
 #define _O &kp O
 #define _P &kp P
 
-#define _A &kp A
+#define _X &hml RALT X
 #define _S &kp S
 #define _D &kp D
 #define _F &kp F
 #define _G &hmr LGUI G
+
 #define _H &hml LGUI H
 #define _J &kp J
 #define _K &kp K
 #define _L &kp L
-
-#define _B &hml LSHIFT B
-#define _X &hml RALT X
-#define _C &hml LALT C
-#define _V &hml LCTRL V
-#define _N &hmr LSHIFT N
-#define _M &hmr LCTRL M
-
-ZMK_MOD_PAIR(__dot, DOT, LALT, LS(SEMI))
-#define _DOT &__dot
 ZMK_MOD_PAIR(__fslh, FSLH, RALT, BSLH)
 #define _FSLH &__fslh
+
+#define _C &hml LALT C
+#define _V &hml LCTRL V
+#define _B &hml LSHIFT B
+
+#define _N &hmr LSHIFT N
+#define _M &hmr LCTRL M
+ZMK_MOD_PAIR(__dot, DOT, LALT, LS(SEMI))
+#define _DOT &__dot
 
 ZMK_BEHAVIOR(__capsword_us, caps_word, continue-list = <UNDER MINUS BKSP DEL>;)
 ZMK_HOLDTAP(__caps_us, mo, __caps_us)

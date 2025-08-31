@@ -35,7 +35,7 @@ ZMK_MOD_PAIR(__COMMA, COMMA, RALT, SEMI)
 
 #define _SPACE &hold_tap LA(LC(LGUI)) SPACE
 
-ZMK_LAYER(NUMERIC,
+ZMK_LAYER(LAYER1,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
       _STAR    _AT      _LBRC    _RBRC    _EQUAL     _PLUS    _N7      _N8      _N9     _N0
       _COMMA   _DQT     _LPAR    _RPAR    _DOLLAR    _MINUS   _N4      _N5      _N6     _UNDER
