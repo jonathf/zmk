@@ -12,8 +12,12 @@
 #define _N9 &kp N9
 #define _N0 &kp N0
 
-ZMK_MOD_PAIR(__COMMA, COMMA, RALT, SEMI)
-#define _COMMA &__COMMA
+ZMK_BEHAVIOR(__comma, mod_morph,
+  bindings = <&hml RALT COMMA>, <&kp SEMI)>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+#define _COMMA &__comma
+// ZMK_MOD_PAIR(__COMMA, COMMA, RALT, SEMI)
 #define _DQT &kp DQT
 #define _LPAR &kp LPAR
 #define _RPAR &kp RPAR
@@ -33,7 +37,7 @@ ZMK_MOD_PAIR(__COMMA, COMMA, RALT, SEMI)
 #define _N2 &kp N2
 #define _N3 &kp N3
 
-ZMK_LAYER(LAYER1,
+ZMK_LAYER(_LAYER1,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
       _STAR    _AT      _LBRC    _RBRC    _EQUAL     _PLUS    _N7      _N8      _N9     _N0
       _COMMA   _DQT     _LPAR    _RPAR    _DOLLAR    _MINUS   _N4      _N5      _N6     _UNDER
@@ -50,8 +54,9 @@ ZMK_LAYER(LAYER1,
 
 #define _PLUS_ &kp MINUS
 
-ZMK_MOD_PAIR(__COMMA_, COMMA, RALT, LS(COMMA))
-#define _COMMA_ &__COMMA_
+#define _COMMA_ &hml RALT COMMA
+// ZMK_MOD_PAIR(__COMMA_, COMMA, RALT, LS(COMMA))
+// #define _COMMA_ &__COMMA_
 #define _DQT_ &kp LS(N2)
 #define _LPAR_ &kp LS(N8)
 #define _RPAR_ &kp LS(N9)
@@ -66,7 +71,7 @@ ZMK_MOD_PAIR(__COMMA_, COMMA, RALT, LS(COMMA))
 
 #define _UNDER_ &hmr RALT LS(FSLH)
 
-ZMK_LAYER(LAYER1_,
+ZMK_LAYER(_LAYER1_,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
       _STAR_   _AT_     _LBRC_   _RBRC_   _EQUAL_    _PLUS_   _        _        _        _
       _COMMA_  _DQT_    _LPAR_   _RPAR_   _DOLLAR_   _MINUS_  _        _        _        _UNDER_

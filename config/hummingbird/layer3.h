@@ -20,7 +20,7 @@
 
 #define _JUMP4 &sl LAYER4
 
-ZMK_LAYER(LAYER3,
+ZMK_LAYER(_LAYER3,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
       _        _BRIMIN  _BRIDN   _BRIUP   _BRIMAX    &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT _
       _BTCLR   _VOLMUTE _VOLDN   _VOLUP   _VOLMAX    &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT _

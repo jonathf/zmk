@@ -36,7 +36,7 @@ ZMK_MOD_NODEAD(_acute, RA(SQT))
 #define _SPACE &hold_tap LA(LC(LGUI)) SPACE
 #define _JUMP0_ &to LAYER0_
 
-ZMK_LAYER(LAYER2,
+ZMK_LAYER(_LAYER2,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
       _HASH    _PARA    _LDANG   _RDANG   _QMARK     _HOME    _PG_DN   _PG_UP   _END     _PSCRN
       _SEMI    _SQT     _LT      _GT      _AMPS      _LEFT    _DOWN    _UP      _RIGHT   _PRCNT
@@ -84,7 +84,7 @@ ZMK_MOD_NODEAD(_acute_, LS(EQUAL))
 
 #define _JUMP0 &to LAYER0
 
-ZMK_LAYER(LAYER2_,
+ZMK_LAYER(_LAYER2_,
 //  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
       _HASH_   _PARA_   _LDANG_  _RDANG_  _QMARK_   _        _        _        _        _
       _SEMI_   _SQT_    _LT_     _GT_     _AMPS_    _        _        _        _        _
