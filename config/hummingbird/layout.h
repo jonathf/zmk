@@ -42,6 +42,15 @@
 #define _TR1 28
 #define _TR2 29
 
-#define LAYER_US 0 1 2
-#define LAYER_NO 5 6 7
+#define LAYER0 0
+#define LAYER0_ 1
+#define LAYER1 2
+#define LAYER1_ 3
+#define LAYER2 4
+#define LAYER2_ 5
+#define LAYER3 6
+#define LAYER4 7
+
+#define LAYER_US 0 2 4
+#define LAYER_NO 1 3 5
 #define LAYER_ALL 0 1 2 3 4 5 6 7
