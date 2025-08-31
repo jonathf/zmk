@@ -41,3 +41,7 @@
 #define _TL1 27
 #define _TR1 28
 #define _TR2 29
+
+#define LAYER_US 0 1 2
+#define LAYER_NO 5 6 7
+#define LAYER_ALL 0 1 2 3 4 5 6 7
