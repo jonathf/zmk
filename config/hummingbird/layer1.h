@@ -12,7 +12,7 @@
 #define _N9 &kp N9
 #define _N0 &kp N0
 
-ZMK_BEHAVIOR(__comma, mod_morph,
+ZMK_MOD_MORPH(__comma,
   bindings = <&hml RALT COMMA>, <&kp SEMI)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 )

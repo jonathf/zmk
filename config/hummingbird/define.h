@@ -30,6 +30,15 @@
                    _LL2 _LL3 _LL4
             >;
         };
+        hold_tap: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <100>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 };
 
