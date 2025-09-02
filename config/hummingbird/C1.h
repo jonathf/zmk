@@ -26,10 +26,13 @@
 #define _GRAVE &holdtap_left LCTRL GRAVE
 
 // #define _ACUTE &holdtap_left LSHIFT RA(SQT)
-ZMK_BEHAVIOR(__acute, macro,
+ZMK_BEHAVIOR(__acute_nodead, macro,
   bindings = <&kp RA(SQT) &kp RA(SQT)>;
 )
-#define _ACUTE &__acute
+ZMK_HOLD_TAP(__acute
+  bindings = <&kp>, <&__acute_nodead>;
+)
+#define _ACUTE &__acute LSHIFT 0
 
 #define _EXCL &holdtap_right LCTRL EXCL
 #define _PIPE &holdtap_right LALT PIPE

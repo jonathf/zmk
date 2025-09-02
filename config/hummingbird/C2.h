@@ -21,10 +21,10 @@
 // ZMK_MOD_NODEAD(_tilde, LA(RBRC))
 // #define _TILDE_ &_tilde LALT 0
 
-// #define _GRAVE_ &kp LS(EQUAL)
+#define _GRAVE_ &kp LS(EQUAL)
 // #define _GRAVE__ &kp LS(EQUAL)
-ZMK_MOD_NODEAD(_grave_, LS(EQUAL))
-#define _GRAVE_ &_grave_ LCTRL 0
+// ZMK_MOD_NODEAD(_grave_, LS(EQUAL))
+// #define _GRAVE_ &_grave_ LCTRL 0
 
 // #define _ACUTE__ &kp EQUAL
 // #define _ACUTE_ &_acute LSHIFT 0
