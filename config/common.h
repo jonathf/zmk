@@ -1,3 +1,5 @@
+#define _ &none
+
 ZMK_HOLD_TAP(holdtap_left,
   flavor = "balanced";
   require-prior-idle-ms = <100>;

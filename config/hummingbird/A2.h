@@ -1,5 +1,3 @@
-#define _ &none
-
 #define _DOT_ &holdtap_right LALT DOT
 // ZMK_BEHAVIOR(__dot_, mod_morph,
 //   bindings = <&holdtap_right RALT DOT>, <&kp LS(DOT)>;
@@ -41,6 +39,6 @@ ZMK_LAYER(_LAYER_A2,
 //  ╰────────┼────────┼────────┼────────┼────────╯ ╰────────┼────────┼────────┼────────┼────────╯
                _        _        _                            _        _        _DOT_
 //           ╰────────┴────────┼────────┼────────╮ ╭────────┼────────┼────────┴────────╯
-                                 _CAPS_   _          _        _
+                                 _CAPS    _SPACE     _JUMPB2  _JUMPC2
 //                             ╰────────┴────────╯ ╰────────┴────────╯
 )
