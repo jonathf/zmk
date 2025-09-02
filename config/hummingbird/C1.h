@@ -1,5 +1,5 @@
 #define _HASH &kp HASH
-#define _PARA &kp LA(S)
+#define _PARA &kp RA(SEMI)
 #define _LDANG &kp RA(LBKT)
 #define _RDANG &kp RA(RBKT)
 #define _QMARK &kp QMARK
@@ -26,10 +26,10 @@
 #define _GRAVE &holdtap_left LCTRL GRAVE
 
 // #define _ACUTE &holdtap_left LSHIFT RA(SQT)
-ZMK_MACRO(_acute,
-  bindings = <&kp RA(SQT)>, <&kp RA(SQT)>;
+ZMK_BEHAVIOR(__acute, macro,
+  bindings = <&kp RA(SQT) &kp RA(SQT)>;
 )
-#define _ACUTE &_acute LSHIFT 0
+#define _ACUTE &__acute
 
 #define _EXCL &holdtap_right LCTRL EXCL
 #define _PIPE &holdtap_right LALT PIPE

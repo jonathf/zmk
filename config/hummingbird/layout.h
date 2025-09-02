@@ -52,13 +52,13 @@
   _LR2 _LR3 _LR4
 
 #define LAYER_A1 0
-#define LAYER_A2 0
-#define LAYER_B1 0
-#define LAYER_B2 0
-#define LAYER_C1 0
-#define LAYER_C2 0
-#define LAYER_D1 0
-#define LAYER_E1 0
+#define LAYER_A2 1
+#define LAYER_B1 2
+#define LAYER_B2 3
+#define LAYER_C1 4
+#define LAYER_C2 5
+#define LAYER_D1 6
+#define LAYER_E1 7
 
 #define LAYER_US 0 2 4
 #define LAYER_NO 1 3 5

@@ -34,4 +34,3 @@ ZMK_LAYER(_LAYER_B2,
                                  _CAPS_   _SPACE     _JUMPB2  _JUMPC2
 //                             ╰────────┴────────╯ ╰────────┴────────╯
 )
-
