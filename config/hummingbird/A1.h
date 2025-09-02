@@ -10,30 +10,30 @@
 #define _O &kp O
 #define _P &kp P
 
-#define _X &hml RALT X
+#define _X &holdtap_left RALT X
 #define _S &kp S
 #define _D &kp D
 #define _F &kp F
-#define _G &hml LGUI G
+#define _G &holdtap_left LGUI G
 
-#define _H &hmr LGUI H
+#define _H &holdtap_right LGUI H
 #define _J &kp J
 #define _K &kp K
 #define _L &kp L
 ZMK_MOD_MORPH(__fslh,
-  bindings = <&hmr RALT FSLH>, <&kp BSLH>;
+  bindings = <&holdtap_right RALT FSLH>, <&kp BSLH>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 #define _FSLH &__fslh
 
-#define _C &hml LALT C
-#define _V &hml LCTRL V
-#define _B &hml LSHIFT B
+#define _C &holdtap_left LALT C
+#define _V &holdtap_left LCTRL V
+#define _B &holdtap_left LSHIFT B
 
-#define _N &hmr LSHIFT N
-#define _M &hmr LCTRL M
+#define _N &holdtap_right LSHIFT N
+#define _M &holdtap_right LCTRL M
 ZMK_MOD_MORPH(__dot,
-  bindings = <&hmr RALT DOT>, <&kp LS(SEMI)>;
+  bindings = <&holdtap_right RALT DOT>, <&kp LS(SEMI)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 #define _DOT &__dot
@@ -51,7 +51,7 @@ ZMK_HOLD_TAP(_caps,
     require-prior-idle-ms=<80>;
 )
 #define _CAPS &_caps LAYER_D1 0
-#define _SPACE &hold_tap LA(LC(LGUI)) SPACE
+#define _SPACE &holdtap LA(LC(LGUI)) SPACE
 #define _JUMPB1 &sl LAYER_B1
 #define _JUMPC1 &sl LAYER_C1
 

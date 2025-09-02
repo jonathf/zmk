@@ -7,8 +7,8 @@
 #include "zmk-helpers/helper.h"
 
 #include "hummingbird/layout.h"
-#include "hummingbird/define.h"
-#include "hummingbird/combo.h"
+#include "common.h"
 
+#include "hummingbird/combo.h"
 #include "hummingbird/A1.h"
 #include "hummingbird/A2.h"

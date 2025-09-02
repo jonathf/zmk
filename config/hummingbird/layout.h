@@ -42,6 +42,15 @@
 #define _TR1 28
 #define _TR2 29
 
+#define _LEFT_HAND \
+  _UL1 _UL2 _UL3 _UL4 _UL5 \
+  _ML1 _ML2 _ML3 _ML4 _ML5 \
+  _LL2 _LL3 _LL4
+#define _RIGHT_HAND \
+  _UR1 _UR2 _UR3 _UR4 _UR5 \
+  _MR1 _MR2 _MR3 _MR4 _MR5 \
+  _LR2 _LR3 _LR4
+
 #define LAYER_A1 0
 #define LAYER_A2 1
 #define LAYER_B1 0
