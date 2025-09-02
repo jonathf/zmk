@@ -11,3 +11,4 @@
 #include "hummingbird/combo.h"
 
 #include "hummingbird/A1.h"
+#include "hummingbird/A2.h"
