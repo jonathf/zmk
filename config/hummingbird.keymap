@@ -14,3 +14,4 @@
 #include "hummingbird/A2.h"
 #include "hummingbird/B1.h"
 #include "hummingbird/B2.h"
+#include "hummingbird/C1.h"
