@@ -6,25 +6,42 @@
 #define _BT3 &bt BT_SEL 3
 #define _BT4 &bt BT_SEL 4
 #define _BT5 &bt BT_SEL 5
-#define _BTCLR &bt BT_CLR
+#define _BCLR &bt BT_CLR
 
-#define _VOLMUTE &kp C_MUTE
-#define _VOLUP &kp C_VOL_UP
-#define _VOLDN &kp C_VOL_DN
-#define _VOLMAX &kp LS(C_VOL_UP)
+#define _MUTE &kp C_MUTE
+#define _VUP &kp C_VOL_UP
+#define _VDN &kp C_VOL_DN
+#define _VMAX &kp LS(C_VOL_UP)
 
-#define _BRIUP &kp C_BRIGHTNESS_INC
-#define _BRIDN &kp C_BRIGHTNESS_DEC
-#define _BRIMIN &kp LS(C_BRIGHTNESS_DEC)
-#define _BRIMAX &kp LS(C_BRIGHTNESS_INC)
+#define _BUP &kp C_BRIGHTNESS_INC
+#define _BDN &kp C_BRIGHTNESS_DEC
+#define _BMIN &kp LS(C_BRIGHTNESS_DEC)
+#define _BMAX &kp LS(C_BRIGHTNESS_INC)
 
-#define _JUMP4 &sl LAYER4
+#define _SUP &msc SCRL_UP
+#define _SDOW &msc SCRL_DOWN
+#define _SLEF &msc SCRL_LEFT
+#define _SRIG &msc SCRL_LEFT
 
-ZMK_LAYER(_LAYER3,
-//  ╭────────┬────────┬────────┬────────┬────────╮ ╭────────┬────────┬────────┬────────┬────────╮
-      _        _BRIMIN  _BRIDN   _BRIUP   _BRIMAX    &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT _
-      _BTCLR   _VOLMUTE _VOLDN   _VOLUP   _VOLMAX    &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT _
-               _BT0     _BT1     _BT2                &mkp LCLK      &mkp MCLK    &mkp RCLK
-//           ╰────────┴────────┼────────┼────────┤ ├────────┼────────┼────────┴────────╯
-                                 _        _          _        _JUMP4
+#define _MUP &mmv MOVE_UP
+#define _MDOW &mmv MOVE_DOWN
+#define _MLEF &mmv MOVE_LEFT
+#define _MRIG &mmv MOVE_RIGHT
+
+#define _LCLK &mkp LCLK
+#define _MCLK &mkp MCLK
+#define _RCLK &mkp RCLK
+
+#define _J_E1 &sl LAYER_E1
+
+ZMK_LAYER(_LAYER_D1,
+//╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
+   _     _BMIN _BDN  _BUP  _BMAX _SLEF _SDOW _SUP  _SRIG _
+//├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
+   _BCLR _MUTE _VDN  _VUP  _VMAX _MLEF _MDOW _MUP  _MRIG _
+//╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
+         _BT0  _BT1  _BT2              _LCLK _MCLK _RCLK
+//      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
+                     _     _     _     _J_E1
+//                  ╰─────┴─────┴─────┴─────╯
 )
