@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #include "zmk-helpers/helper.h"
+#include "zmk-helpers/key-labels/hummingbird.h"
 
 #include "hummingbird/layout.h"
 #include "common.h"
