@@ -1,4 +1,3 @@
-
 #define _F1 &kp F1
 #define _F2 &kp F2
 #define _F3 &kp F3
