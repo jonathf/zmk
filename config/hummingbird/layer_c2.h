@@ -34,7 +34,8 @@
 ZMK_MACRO(__acute_nodead_,
   bindings = <&kp EQUAL &kp EQUAL>;
 )
-#define ACUT_ &__acute_nodead_
+ZMK_HOLD_TAP(__acute_, _hold_tap_args(&kp, &__acute_nodead_))
+#define ACUT_ &__acute_ LSHIFT 0
 
 #define EURO_ &holdtap_right LSHIFT RA(N4)
 #define EXCL_ &holdtap_right LCTRL LS(N1)
