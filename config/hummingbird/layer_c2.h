@@ -36,7 +36,8 @@ ZMK_MACRO(__acute_nodead_,
 )
 #define ACUT_ &__acute_nodead_
 
-#define EXCL_ &kp LS(N1)
+#define EURO_ &holdtap_right LSHIFT RA(N4)
+#define EXCL_ &holdtap_right LCTRL LS(N1)
 #define PIPE_ &holdtap_right LALT LA(N7)
 
 #define _J_A1 &to LAYER_A1
@@ -47,7 +48,7 @@ ZMK_LAYER(_LAYER_C2,
 //├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
    SEMI_ SQT_  LT_   GT_   AMPS_ _     _     _     _     _
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
-         TILD_ GRAV_ ACUT_             _     EXCL_ PIPE_
+         TILD_ GRAV_ ACUT_             EURO_ EXCL_ PIPE_
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
                      _J_A1 _     _J_B2 _J_C2
 //                  ╰─────┴─────┴─────┴─────╯
