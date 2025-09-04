@@ -22,29 +22,53 @@
 #define LAYER_NO 1 3 5
 #define LAYER_ALL 0 1 2 3 4 5 6 7
 
+#define _hold_tap_args(bind1, bind2) \
+    flavor = "balanced"; \
+    require-prior-idle-ms = <100>; \
+    tapping-term-ms = <200>; \
+    quick-tap-ms = <150>; \
+    bindings = <bind1>, <bind2>;
 
+ZMK_HOLD_TAP(holdtap, _hold_tap_args(&kp, &kp))
 ZMK_HOLD_TAP(holdtap_left,
-  flavor = "balanced";
-  require-prior-idle-ms = <100>;
-  tapping-term-ms = <200>;
-  quick-tap-ms = <150>;
-  bindings = <&kp>, <&kp>;
+  _hold_tap_args(&kp, &kp)
   hold-trigger-on-release;
   hold-trigger-key-positions = <_RIGHT_HAND>;
 )
 ZMK_HOLD_TAP(holdtap_right,
-  flavor = "balanced";
-  require-prior-idle-ms = <100>;
-  tapping-term-ms = <200>;
-  quick-tap-ms = <150>;
-  bindings = <&kp>, <&kp>;
+  _hold_tap_args(&kp, &kp)
   hold-trigger-on-release;
   hold-trigger-key-positions = <_LEFT_HAND>;
 )
-ZMK_HOLD_TAP(holdtap,
-  flavor = "balanced";
-  require-prior-idle-ms = <100>;
-  tapping-term-ms = <200>;
-  quick-tap-ms = <150>;
-  bindings = <&kp>, <&kp>;
+
+ZMK_CAPS_WORD(__caps_us,
+  continue-list = <UNDER MINUS BKSP DEL>;
 )
+ZMK_HOLD_TAP(_caps_us, _hold_tap_args(&mo, &__caps_us))
+
+
+// ZMK_HOLD_TAP(holdtap_left,
+//   flavor = "balanced";
+//   require-prior-idle-ms = <100>;
+//   tapping-term-ms = <200>;
+//   quick-tap-ms = <150>;
+//   bindings = <&kp>, <&kp>;
+//   hold-trigger-on-release;
+//   hold-trigger-key-positions = <_RIGHT_HAND>;
+// )
+// ZMK_HOLD_TAP(holdtap_right,
+//   flavor = "balanced";
+//   require-prior-idle-ms = <100>;
+//   tapping-term-ms = <200>;
+//   quick-tap-ms = <150>;
+//   bindings = <&kp>, <&kp>;
+//   hold-trigger-on-release;
+//   hold-trigger-key-positions = <_LEFT_HAND>;
+// )
+// ZMK_HOLD_TAP(holdtap,
+//   flavor = "balanced";
+//   require-prior-idle-ms = <100>;
+//   tapping-term-ms = <200>;
+//   quick-tap-ms = <150>;
+//   bindings = <&kp>, <&kp>;
+// )
