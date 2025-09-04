@@ -33,7 +33,7 @@ ZMK_MOD_MORPH(__fslh,
 #define _N &holdtap_right LSHIFT N
 #define _M &holdtap_right LCTRL M
 ZMK_MOD_MORPH(__dot,
-  bindings = <&holdtap_right RALT DOT>, <&kp LS(SEMI)>;
+  bindings = <&holdtap_right LALT DOT>, <&kp LS(SEMI)>;
   mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 #define _DOT &__dot
