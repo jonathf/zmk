@@ -12,11 +12,6 @@
 #define _2MOUSE &sl 4
 #define _2FUNC &sl 5
 
-ZMK_BEHAVIOR(__0_capsword, caps_word,
-    continue-list = <UNDER MINUS BKSP DEL>;
-)
-ZMK_HOLDTAP(__0_layer_caps, mo, __0_capsword)
-#define _0_CAPS &__0_layer_caps 3 0
 
 ZMK_BEHAVIOR(__1_capsword, caps_word,
     continue-list = <FSLH LS(FSLH) BKSP DEL>;
