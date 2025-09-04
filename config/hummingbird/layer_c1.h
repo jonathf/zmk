@@ -25,14 +25,13 @@
 #define _TILD &holdtap_left LALT TILDE
 #define _GRAV &holdtap_left LCTRL GRAVE
 
-// #define _ACUT &holdtap_left LSHIFT RA(SQT)
-ZMK_BEHAVIOR(__acute, macro,
+ZMK_MACRO(__acute_nodead,
   bindings = <&kp RA(SQT) &kp RA(SQT)>;
 )
 // ZMK_HOLD_TAP(__acute
 //   bindings = <&kp>, <&__acute_nodead>;
 // )
-#define _ACUT &__acute
+#define _ACUT &__acute_nodead
 
 #define _EXCL &holdtap_right LCTRL EXCL
 #define _PIPE &holdtap_right LALT PIPE

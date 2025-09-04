@@ -7,19 +7,16 @@
 #define PLUS_ &kp MINUS
 
 #define COMA_ &holdtap_left RALT COMMA
-// ZMK_MOD_PAIR(__COMMA_, COMMA, RALT, LS(COMMA))
-// #define _COMMA_ &__COMMA_
 #define DQT_ &kp LS(N2)
 #define LPAR_ &kp LS(N8)
 #define RPAR_ &kp LS(N9)
 #define DOLL_ &holdtap_left LGUI LS(N4)
 
-#define DASH_ &holdtap_right LGUI FSLH
-
-// #define _CARET_ &hold_tap LALT LS(RBRC)
 #define CART_ &holdtap_left LALT LS(LA(RBRC))
 #define LBKT_ &holdtap_left LCTRL LA(N8)
 #define RBKT_ &holdtap_left LSHIFT LA(N9)
+
+#define DASH_ &holdtap_right LGUI FSLH
 
 #define UNDR_ &holdtap_right RALT LS(FSLH)
 

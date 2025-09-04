@@ -31,10 +31,10 @@
 // ZMK_UNICODE_SINGLE(__2_ACUTE, N0, N0, B, N4)
 // ZMK_MOD_NODEAD(_acute_, LS(EQUAL))
 // #define _ACUTE_ &_acute_ LSHIFT 0
-ZMK_BEHAVIOR(__acute_, macro,
+ZMK_MACRO(__acute_nodead_,
   bindings = <&kp EQUAL &kp EQUAL>;
 )
-#define ACUT_ &__acute_
+#define ACUT_ &__acute_nodead_
 
 #define EXCL_ &kp LS(N1)
 #define PIPE_ &holdtap_right LALT LA(N7)
