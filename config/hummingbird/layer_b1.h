@@ -14,10 +14,8 @@
 //   bindings = <&holdtap_left RALT COMMA>, <&kp SEMI)>;
 //   mods = <(MOD_LSFT|MOD_RSFT)>;
 // )
-//
-// #define _COMMA &__comma
-// ZMK_MOD_PAIR(__COMMA, COMMA, RALT, SEMI)
-#define _COMA &kp COMMA
+// #define _COMA &__comma
+#define _COMA &holdtap_left RALT COMMA
 #define _DQT &kp DQT
 #define _LPAR &kp LPAR
 #define _RPAR &kp RPAR
@@ -33,9 +31,9 @@
 #define _LBKT &holdtap_left LCTRL LBKT
 #define _RBKT &holdtap_left LSHIFT RBKT
 
-#define _N1 &kp N1
-#define _N2 &kp N2
-#define _N3 &kp N3
+#define _N1 &holdtap_right LSHIFT N1
+#define _N2 &holdtap_right LCTRL N2
+#define _N3 &holdtap_right LALT N3
 
 ZMK_LAYER(_LAYER_B1,
 //╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
