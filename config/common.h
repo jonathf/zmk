@@ -44,31 +44,8 @@ ZMK_HOLD_TAP(holdtap_right,
 ZMK_CAPS_WORD(__caps_us,
   continue-list = <UNDER MINUS BKSP DEL>;
 )
+ZMK_CAPS_WORD(__caps_no,
+  continue-list = <FSLH LS(FSLH) BKSP DEL>;
+)
 ZMK_HOLD_TAP(_caps_us, _hold_tap_args(&mo, &__caps_us))
-
-
-// ZMK_HOLD_TAP(holdtap_left,
-//   flavor = "balanced";
-//   require-prior-idle-ms = <100>;
-//   tapping-term-ms = <200>;
-//   quick-tap-ms = <150>;
-//   bindings = <&kp>, <&kp>;
-//   hold-trigger-on-release;
-//   hold-trigger-key-positions = <_RIGHT_HAND>;
-// )
-// ZMK_HOLD_TAP(holdtap_right,
-//   flavor = "balanced";
-//   require-prior-idle-ms = <100>;
-//   tapping-term-ms = <200>;
-//   quick-tap-ms = <150>;
-//   bindings = <&kp>, <&kp>;
-//   hold-trigger-on-release;
-//   hold-trigger-key-positions = <_LEFT_HAND>;
-// )
-// ZMK_HOLD_TAP(holdtap,
-//   flavor = "balanced";
-//   require-prior-idle-ms = <100>;
-//   tapping-term-ms = <200>;
-//   quick-tap-ms = <150>;
-//   bindings = <&kp>, <&kp>;
-// )
+ZMK_HOLD_TAP(_caps_no, _hold_tap_args(&mo, &__caps_no))

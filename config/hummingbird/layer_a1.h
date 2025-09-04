@@ -38,19 +38,7 @@ ZMK_MOD_MORPH(__dot,
 )
 #define _DOT &__dot
 
-ZMK_CAPS_WORD(__caps,
-  continue-list = <UNDER MINUS BKSP DEL>;
-)
-ZMK_HOLD_TAP(_caps,
-    flavor="tap-preferred";
-    tapping-term-ms=<200>;
-    quick-tap-ms=<100>;
-    global-quick-tap;
-    hold-trigger-on-release;
-    bindings = <&mo>, <&__caps>;
-    require-prior-idle-ms=<80>;
-)
-#define _CAPS &_caps LAYER_D1 0
+#define _CAPS &_caps_us LAYER_D1 0
 #define _SPC &holdtap LA(LC(LGUI)) SPACE
 #define _J_B1 &sl LAYER_B1
 #define _J_C1 &sl LAYER_C1

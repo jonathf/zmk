@@ -14,19 +14,7 @@ ZMK_MOD_MORPH(__fslh_,
 // ZMK_UNICODE_PAIR(__2_FSLH, N0, N0, N2, F, N0, N0, N5, C)
 // #define _2_FSLH &__2_FSLH
 
-ZMK_CAPS_WORD(__caps_,
-  continue-list = <FSLH LS(FSLH) BKSP DEL>;
-)
-ZMK_HOLD_TAP(_caps_,
-    flavor="tap-preferred";
-    tapping-term-ms=<200>;
-    quick-tap-ms=<100>;
-    global-quick-tap;
-    hold-trigger-on-release;
-    bindings = <&mo>, <&__caps_>;
-    require-prior-idle-ms=<80>;
-)
-#define CAPS_ &_caps_ LAYER_D1 0
+#define CAPS_ &_caps_no LAYER_D1 0
 // ZMK_HOLDTAP(__caps_, mo, __caps_)
 #define _J_B2 &sl LAYER_B2
 #define _J_C2 &sl LAYER_C2
