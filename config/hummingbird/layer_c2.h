@@ -14,23 +14,10 @@
 #define SQT_ &kp NON_US_BSLH
 #define LT_ &kp GRAVE
 #define GT_ &kp LS(GRAVE)
-#define AMPS_ &kp LS(N6)
+#define AMPS_ &holdtap_left LGUI LS(N6)
 
 #define TILD_ &holdtap_left LALT LC(RBRC)
-// #define _TILDE_ &hold_tap LALT LA(RBRC)
-// ZMK_MOD_NODEAD(_tilde, LA(RBRC))
-// #define _TILDE_ &_tilde LALT 0
-
-#define GRAV_ &kp LS(EQUAL)
-// #define _GRAVE__ &kp LS(EQUAL)
-// ZMK_MOD_NODEAD(_grave_, LS(EQUAL))
-// #define _GRAVE_ &_grave_ LCTRL 0
-
-// #define _ACUTE__ &kp EQUAL
-// #define _ACUTE_ &_acute LSHIFT 0
-// ZMK_UNICODE_SINGLE(__2_ACUTE, N0, N0, B, N4)
-// ZMK_MOD_NODEAD(_acute_, LS(EQUAL))
-// #define _ACUTE_ &_acute_ LSHIFT 0
+#define GRAV_ &holdtap_left LCTRL LS(EQUAL)
 ZMK_MACRO(__acute_nodead_,
   bindings = <&kp EQUAL &kp EQUAL>;
 )

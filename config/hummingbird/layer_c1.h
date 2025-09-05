@@ -14,9 +14,9 @@
 #define _SQT &kp SQT
 #define _LT &kp LT
 #define _GT &kp GT
-#define _AMPS &kp AMPS
+#define _AMPS &holdtap_left LGUI AMPS
 
-#define _LEFT &kp LEFT
+#define _LEFT &holdtap_right LGUI LEFT
 #define _DOWN &kp DOWN
 #define _UP &kp UP
 #define _RIGT &kp RIGHT

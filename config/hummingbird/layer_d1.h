@@ -1,5 +1,3 @@
-#pragma once
-
 #define _BT0 &bt BT_SEL 0
 #define _BT1 &bt BT_SEL 1
 #define _BT2 &bt BT_SEL 2
