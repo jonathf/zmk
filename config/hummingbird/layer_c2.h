@@ -1,13 +1,12 @@
+/*
+Alternate navigation layer.
+
+Assuming Norwegian keyboard layout.
+*/
 #define HASH_ &kp LS(N3)
 #define PARA_ &kp LS(NON_US_BSLH)
-// ZMK_UNICODE_SINGLE(__2_PARA, N0, N0, A, N7)
-// #define _2_PARA &__2_PARA
 #define LDAN_ &kp LS(LA(V))
-// ZMK_UNICODE_SINGLE(__2_LDANG, N0, N0, A, B)
-// #define _2_LDANG &__2_LDANG
 #define RDAN_ &kp LS(LA(B))
-// ZMK_UNICODE_SINGLE(__2_RDANG, N0, N0, B, B)
-// #define _2_RDANG &__2_RDANG
 #define QMRK_ &kp UNDER
 
 #define SEMI_ &holdtap_left RALT LS(COMMA)

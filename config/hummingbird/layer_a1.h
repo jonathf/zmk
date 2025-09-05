@@ -1,3 +1,8 @@
+/*
+Main QWERTY layer.
+
+Assuming US-international keyboard layout.
+*/
 #define _A &kp A
 #define _W &kp W
 #define _E &kp E

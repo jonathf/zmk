@@ -1,3 +1,8 @@
+/*
+Alternate QWERTY layer.
+
+Assuming Norwegian keyboard layout.
+*/
 #define DOT_ &holdtap_right LALT DOT
 
 ZMK_MOD_MORPH(__fslh_,

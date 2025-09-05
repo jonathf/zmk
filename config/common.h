@@ -1,3 +1,6 @@
+/*
+Common definitions.
+*/
 #define _ &none
 
 #define _LEFT_HAND \

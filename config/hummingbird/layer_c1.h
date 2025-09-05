@@ -1,3 +1,8 @@
+/*
+Main navigation layer.
+
+Assuming US-international keyboard layout.
+*/
 #define _HASH &kp HASH
 #define _PARA &kp RA(SEMI)
 #define _LDAN &kp RA(LBKT)

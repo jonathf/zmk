@@ -1,3 +1,8 @@
+/*
+Alternate numerical layer.
+
+Assuming Norwegian keyboard layout.
+*/
 #define STAR_ &kp LS(BSLH)
 #define AT_ &kp BSLH
 #define LBRC_ &kp LA(LS(N8))

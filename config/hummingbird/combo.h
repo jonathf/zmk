@@ -1,4 +1,6 @@
 /*
+Combos triggered by pushing two (or more) keys at the same time.
+
 Adjecent pairs
       ╭────┬────┬────┬────╮  ╭────┬────┬────┬────╮
         Q         4tb               ins  del

@@ -1,3 +1,8 @@
+/*
+Main numerical layer.
+
+Assuming US-international keyboard layout.
+*/
 #define _STAR &kp STAR
 #define _AT &kp AT
 #define _LBRC &kp LBRC
