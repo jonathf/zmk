@@ -1,6 +1,14 @@
 /*
 Functional keys layer.
 */
+#define _BT0 &bt BT_SEL 0
+#define _BT1 &bt BT_SEL 1
+#define _BT2 &bt BT_SEL 2
+#define _BT3 &bt BT_SEL 3
+#define _BT4 &bt BT_SEL 4
+#define _BT5 &bt BT_SEL 5
+#define _BCLR &bt BT_CLR
+
 #define _F1 &kp F1
 #define _F2 &kp F2
 #define _F3 &kp F3
@@ -26,9 +34,9 @@ ZMK_LAYER(_LAYER_E1,
 //╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
    _     _     _     _     _     _F12  _F7   _F8   _F9   _F10
 //├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-   _     _     _     _     _     _F13  _F4   _F5   _F6   _F11
+   _BCLR _     _     _     _     _F13  _F4   _F5   _F6   _F11
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
-         _     _     _                 _F1   _F2   _F3
+         _BT0  _BT1  _BT2              _F1   _F2   _F3
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
                      _     _     _     _
 //                  ╰─────┴─────┴─────┴─────╯
