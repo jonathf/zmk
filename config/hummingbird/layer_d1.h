@@ -14,7 +14,7 @@ Mouse and media layer.
 #define _SUP &msc SCRL_UP
 #define _SDOW &msc SCRL_DOWN
 #define _SLEF &msc SCRL_LEFT
-#define _SRIG &msc SCRL_LEFT
+#define _SRIG &msc SCRL_RIGHT
 
 #define _MUP &mmv MOVE_UP
 #define _MDOW &mmv MOVE_DOWN
