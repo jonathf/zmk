@@ -10,13 +10,12 @@ Adjecent pairs
 */
 #pragma once
 
-ZMK_COMBO(_Q_US_COMBO,  &kp Q,      LT2 LT3, LAYER_US)
-ZMK_COMBO(_Q_NO_COMBO,  &kp Q,      LT2 LT3, LAYER_NO)
+ZMK_COMBO(_Q_COMBO,     &kp Q,      LT2 LT3, LAYER_ALL)
 
 ZMK_BEHAVIOR(multi_tab, macro,
     bindings = <&macro_tap &kp TAB &kp TAB &kp TAB &kp TAB>;
 )
-ZMK_COMBO(_MULTI_TAB_COMBO,  &multi_tab, LT1 LT2, LAYER_ALL)
+ZMK_COMBO(_MTAB_COMBO,  &multi_tab, LT1 LT2, LAYER_ALL)
 
 ZMK_COMBO(_INS_COMBO,   &kp INS,    RT1 RT2, LAYER_ALL)
 ZMK_COMBO(_DEL_COMBO,   &kp DEL,    RT2 RT3, LAYER_ALL)
@@ -30,8 +29,8 @@ ZMK_BEHAVIOR(multi_bksp, macro,
 )
 ZMK_COMBO(_MULTI_BKSP_COMBO, &multi_bksp,RM3 RT4, LAYER_ALL)
 
-ZMK_COMBO(_Z_US_COMBO,  &kp Z,      LB2 LB3, LAYER_US)
-ZMK_COMBO(_Z_NO_COMBO,  &kp Z,      LB2 LB3, LAYER_NO)
+ZMK_COMBO(_Z_COMBO,     &kp Z,      LB2 LB3, LAYER_ALL)
+ZMK_COMBO(_Z_COMBO2,    &kp Z,      LM4 LB3, LAYER_ALL)
 ZMK_COMBO(_AA_US_COMBO, &kp RA(W),  LB1 LB2, LAYER_US)
 ZMK_COMBO(_AA_NO_COMBO, &kp LBKT,   LB1 LB2, LAYER_NO)
 
