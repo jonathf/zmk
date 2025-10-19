@@ -3,8 +3,8 @@ Combos triggered by pushing two (or more) keys at the same time.
 
 Adjecent pairs
       ╭────┬────┬────┬────╮  ╭────┬────┬────┬────╮
-        Q         4tb               ins  del
-             esc  tab               cr   bs   4bs
+             Q    Z                 ins  del
+             esc  tab 4tab          cr   bs   4bs
              Z    Å                 Æ    Ø
       ╰────┴────┴────┴────╯  ╰────┴────┴────┴────╯
 */
@@ -15,22 +15,21 @@ ZMK_COMBO(_Q_COMBO,     &kp Q,      LT2 LT3, LAYER_ALL)
 ZMK_BEHAVIOR(multi_tab, macro,
     bindings = <&macro_tap &kp TAB &kp TAB &kp TAB &kp TAB>;
 )
-ZMK_COMBO(_MTAB_COMBO,  &multi_tab, LT1 LT2, LAYER_ALL)
-
 ZMK_COMBO(_INS_COMBO,   &kp INS,    RT1 RT2, LAYER_ALL)
 ZMK_COMBO(_DEL_COMBO,   &kp DEL,    RT2 RT3, LAYER_ALL)
 
 ZMK_COMBO(_ESC_COMBO,   &kp ESC,    LM2 LM3, LAYER_ALL)
+ZMK_COMBO(_MTAB_COMBO,  &multi_tab, LM0 LM1, LAYER_ALL)
 ZMK_COMBO(_TAB_COMBO,   &kp TAB,    LM1 LM2, LAYER_ALL)
 ZMK_COMBO(_ENTER_COMBO, &kp ENTER , RM1 RM2, LAYER_ALL)
 ZMK_COMBO(_BKSP_COMBO,  &kp BKSP,   RM2 RM3, LAYER_ALL)
 ZMK_BEHAVIOR(multi_bksp, macro,
     bindings = <&macro_tap &kp BKSP &kp BKSP &kp BKSP &kp BKSP>;
 )
-ZMK_COMBO(_MULTI_BKSP_COMBO, &multi_bksp,RM3 RT4, LAYER_ALL)
+ZMK_COMBO(_MBKSP_COMBO, &multi_bksp, RM3 RT4, LAYER_ALL)
 
 ZMK_COMBO(_Z_COMBO,     &kp Z,      LB2 LB3, LAYER_ALL)
-ZMK_COMBO(_Z_COMBO2,    &kp Z,      LM4 LB3, LAYER_ALL)
+ZMK_COMBO(_Z_COMBO2,    &kp Z,      LT1 LT2, LAYER_ALL)
 ZMK_COMBO(_AA_US_COMBO, &kp RA(W),  LB1 LB2, LAYER_US)
 ZMK_COMBO(_AA_NO_COMBO, &kp LBKT,   LB1 LB2, LAYER_NO)
 
