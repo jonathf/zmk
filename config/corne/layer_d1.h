@@ -33,11 +33,11 @@ Mouse and media layer.
 
 ZMK_LAYER(_LAYER_D1,
 //╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
-  _ _     _BMIN _BDN  _BUP  _BMAX _SLEF _SDOW _SUP  _SRIG _   _
+ _ _     _BMIN _BDN  _BUP  _BMAX _SLEF _SDOW _SUP  _SRIG _   _
 //├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-  _ _     _MUTE _VDN  _VUP  _VMAX _MLEF _MDOW _MUP  _MRIG _   _
+ _ _     _MUTE _VDN  _VUP  _VMAX _MLEF _MDOW _MUP  _MRIG _   _
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
-  _ _     _CUT  _COPY _PAST _     _     _LCLK _MCLK _RCLK _   _
+ _ _     _CUT  _COPY _PAST _     _     _LCLK _MCLK _RCLK _   _
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
                _     _     _     _     _J_E1 _
 //                  ╰─────┴─────┴─────┴─────╯
