@@ -12,7 +12,7 @@ Assuming US-international keyboard layout.
 #define _Y &kp Y
 #define _U &kp U
 #define _I &kp I
-#define _O &kp O
+#define _O &layertap_right LAYER_D1 O
 #define _P &kp P
 
 #define _X &holdtap_left RALT X
@@ -43,8 +43,13 @@ ZMK_MOD_MORPH(__dot,
 )
 #define _DOT &__dot
 
-#define _CAPS &_caps_us LAYER_D1 0
-#define _SPC &holdtap LA(LC(LGUI)) SPACE
+// #define _CAPS &_caps_us LAYER_D1 0
+ZMK_HOLD_TAP(_caps, _hold_tap_args(&kp, &_caps_us))
+#define _CAPS &_caps LA(LC(LGUI)) 0
+
+// #define _SPC &holdtap LA(LC(LGUI)) SPACE
+#define _SPC &holdtap LSHIFT SPACE
+
 #define _J_B1 &sl LAYER_B1
 #define _J_C1 &sl LAYER_C1
 
