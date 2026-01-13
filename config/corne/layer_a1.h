@@ -3,8 +3,8 @@ Main QWERTY layer.
 
 Assuming US-international keyboard layout.
 */
-#define _A &kp A
-#define _W &kp W
+#define _A &holdtap_left RALT A
+#define _W &layertap_left LAYER_E1 W
 #define _E &kp E
 #define _R &kp R
 #define _T &kp T

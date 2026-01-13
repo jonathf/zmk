@@ -32,6 +32,14 @@ Common definitions.
     quick-tap-ms = <150>; \
     bindings = <bind1>, <bind2>;
 
+ZMK_HOLD_TAP(layertap_left, _hold_tap_args(&mo, &kp)
+  hold-trigger-on-release;
+  hold-trigger-key-positions = <_RIGHT_HAND>;
+)
+ZMK_HOLD_TAP(layertap_right, _hold_tap_args(&mo, &kp)
+  hold-trigger-on-release;
+  hold-trigger-key-positions = <_LEFT_HAND>;
+)
 ZMK_HOLD_TAP(holdtap, _hold_tap_args(&kp, &kp))
 ZMK_HOLD_TAP(holdtap_left,
   _hold_tap_args(&kp, &kp)

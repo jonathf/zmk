@@ -3,7 +3,7 @@ Combos triggered by pushing two (or more) keys at the same time.
 
 Adjecent pairs
       ╭────┬────┬────┬────╮  ╭────┬────┬────┬────╮
-             Q    Z                 ins  del
+             Q    X                 /    _
              esc  tab 4tab          cr   bs   4bs
              Z    Å                 Æ    Ø
       ╰────┴────┴────┴────╯  ╰────┴────┴────┴────╯
