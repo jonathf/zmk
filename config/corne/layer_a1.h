@@ -44,7 +44,7 @@ ZMK_MOD_MORPH(__dot,
 #define _DOT &__dot
 
 // #define _CAPS &_caps_us LAYER_D1 0
-ZMK_HOLD_TAP(_caps, _hold_tap_args(&kp, &_caps_us))
+ZMK_HOLD_TAP(_caps, _hold_tap_args(&kp, &__caps_us))
 #define _CAPS &_caps LA(LC(LGUI)) 0
 
 // #define _SPC &holdtap LA(LC(LGUI)) SPACE
