@@ -26,10 +26,19 @@ Assuming US-international keyboard layout.
 #define _RPAR &kp RPAR
 #define _DOLL &holdtap_left LGUI DOLLAR
 
-#define _DASH &holdtap_right LGUI MINUS
+ZMK_MOD_MORPH(__dash,
+  bindings = <&holdtap_left LGUI MINUS>, <&kp CARET>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+#define _DASH &__dash
 #define _N4 &kp N4
 #define _N5 &kp N5
-#define _N6 &kp N6
+
+ZMK_MOD_MORPH(__n6,
+  bindings = <&kp N6>, <&kp DOLLAR>;
+  mods = <(MOD_LSFT|MOD_RSFT)>;
+)
+#define _N6 &__n6
 #define _UNDR &holdtap_right RALT UNDER
 
 #define _CART &holdtap_left LALT CARET
