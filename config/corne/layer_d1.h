@@ -10,15 +10,18 @@
 #define _DOLL &kp DOLLAR
 #define _PARA &holdtap_right RALT RA(SEMI)
 
+#define _EXCL &kp EXCL
+#define _QMRK &holdtap_right LGUI QMARK
+
 #define _CUTE &holdtap_left LSHIFT RA(SQT)
 #define _BSLH &holdtap_right LSHIFT BSLH
 #define _HASH &holdtap_right LCTRL HASH
 
 ZMK_LAYER(_LAYER_D1,
 //╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
- _ _     _     _EURO _     _     _TILD _     _     _PRCN _     _
+ _ _     _EXCL _EURO _     _     _TILD _     _     _PRCN _     _
 //├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
- _ _     _     _BSLH _FSLH _     _CART _PIPE _STAR _DOLL _PARA _
+ _ _     _QMRK _BSLH _FSLH _     _CART _PIPE _STAR _DOLL _PARA _
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
  _ _     _     _     _CUTE _     _     _AMPS _HASH _     _     _
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯

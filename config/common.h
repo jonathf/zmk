@@ -55,10 +55,10 @@ ZMK_HOLD_TAP(holdtap_right,
 )
 
 ZMK_CAPS_WORD(__caps_us,
-  continue-list = <UNDER MINUS BKSP DEL>;
+  continue-list = <UNDER MINUS BKSP DEL INS>;
 )
 ZMK_CAPS_WORD(__caps_no,
-  continue-list = <FSLH LS(FSLH) BKSP DEL>;
+  continue-list = <FSLH LS(FSLH) BKSP DEL INS>;
 )
 ZMK_HOLD_TAP(_caps_us, _hold_tap_args(&mo, &__caps_us))
 ZMK_HOLD_TAP(_caps_no, _hold_tap_args(&mo, &__caps_no))
