@@ -3,10 +3,8 @@ Combos triggered by pushing two (or more) keys at the same time.
 
 Adjecent pairs
       ╭────┬────┬────┬────╮  ╭────┬────┬────┬────╮
-             Q    X                      /
+             Q    X                 ins  del
              esc  tab 4tb           cr   bs   4bs
-                                         del
-                                         ins
              Z    Å                 Æ    Ø
       ╰────┴────┴────┴────╯  ╰────┴────┴────┴────╯
 */
@@ -14,15 +12,14 @@ Adjecent pairs
 
 ZMK_COMBO(_Q_COMBO,     &kp Q,      LT2 LT3, LAYER_ALL)
 ZMK_COMBO(_X_COMBO,     &kp X,      LT1 LT2, LAYER_ALL)
-ZMK_COMBO(_SLH_COMBO,   &__fslh,    RT2 RT3, LAYER_ALL)
 
 ZMK_BEHAVIOR(multi_tab, macro,
     bindings = <&macro_tap &kp TAB &kp TAB &kp TAB &kp TAB>;
 )
 
-ZMK_COMBO(_BKSP_COMBO,  &kp BKSP,   RM2 RM3, 0 1)
-ZMK_COMBO(_DEL_COMBO,   &kp DEL,    RM2 RM3, 2 3)
-ZMK_COMBO(_INS_COMBO,   &kp INS,    RM2 RM3, 4 5)
+ZMK_COMBO(_BKSP_COMBO,  &kp BKSP,   RM2 RM3, LAYER_ALL)
+ZMK_COMBO(_DEL_COMBO,   &kp DEL,    RT2 RT3, LAYER_ALL)
+ZMK_COMBO(_INS_COMBO,   &kp INS,    RT1 RT2, LAYER_ALL)
 
 ZMK_COMBO(_ESC_COMBO,   &kp ESC,    LM2 LM3, LAYER_ALL)
 ZMK_COMBO(_MTAB_COMBO,  &multi_tab, LM0 LM1, LAYER_ALL)

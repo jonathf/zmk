@@ -48,18 +48,18 @@ ZMK_HOLD_TAP(_caps, _hold_tap_args(&kp, &__caps_us))
 #define _CAPS &_caps LA(LC(LGUI)) 0
 
 // #define _SPC &holdtap LA(LC(LGUI)) SPACE
-#define _SPC &holdtap LSHIFT SPACE
+#define _SPC &layertap LAYER_F1 SPACE
 
 #define _J_B1 &sl LAYER_B1
 #define _J_C1 &sl LAYER_C1
 
 ZMK_LAYER(_LAYER_A1,
 //╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
- _  _     _W    _E    _R    _T    _Y    _U    _I    _O    _P    _
+ _  _     _W    _E    _R    _T    _Y    _U    _I    _O    _  _
 //├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
- _  _A    _S    _D    _F    _G    _H    _J    _K    _L    _FSLH _
+ _  _A    _S    _D    _F    _G    _H    _J    _K    _L    _P _
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
- _  _     _C    _V    _B    _     _     _N    _M    _DOT  _     _
+ _  _     _C    _V    _B    _     _     _N    _M    _DOT  _  _
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
                _     _CAPS _SPC  _J_B1 _J_C1 _
 //                  ╰─────┴─────┴─────┴─────╯

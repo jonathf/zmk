@@ -28,3 +28,4 @@
 #include "corne/layer_c2.h"
 #include "corne/layer_d1.h"
 #include "corne/layer_e1.h"
+#include "corne/layer_f1.h"

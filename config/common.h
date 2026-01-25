@@ -20,10 +20,11 @@ Common definitions.
 #define LAYER_C2 5
 #define LAYER_D1 6
 #define LAYER_E1 7
+#define LAYER_F1 8
 
-#define LAYER_US 0 2 4
-#define LAYER_NO 1 3 5
-#define LAYER_ALL 0 1 2 3 4 5 6 7
+#define LAYER_US 0 2 4 6 7 8
+#define LAYER_NO 1 3 5 6 7 8
+#define LAYER_ALL 0 1 2 3 4 5 6 7 8
 
 #define _hold_tap_args(bind1, bind2) \
     flavor = "balanced"; \
@@ -32,6 +33,7 @@ Common definitions.
     quick-tap-ms = <150>; \
     bindings = <bind1>, <bind2>;
 
+ZMK_HOLD_TAP(layertap, _hold_tap_args(&mo, &kp))
 ZMK_HOLD_TAP(layertap_left, _hold_tap_args(&mo, &kp)
   hold-trigger-on-release;
   hold-trigger-key-positions = <_RIGHT_HAND>;
