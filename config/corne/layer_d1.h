@@ -1,44 +1,28 @@
-/*
-Mouse and media layer.
-*/
-#define _MUTE &kp C_MUTE
-#define _VUP &kp C_VOL_UP
-#define _VDN &kp C_VOL_DN
-#define _VMAX &kp LS(C_VOL_UP)
+#define _TILD &kp TILDE
+#define _PIPE &kp PIPE
+#define _AMPS &kp AMPS
+#define _PRCN &kp PRCNT
 
-#define _BUP &kp C_BRIGHTNESS_INC
-#define _BDN &kp C_BRIGHTNESS_DEC
-#define _BMIN &kp LS(C_BRIGHTNESS_DEC)
-#define _BMAX &kp LS(C_BRIGHTNESS_INC)
+#define _CART &holdtap_left LGUI CARET
+#define _STAR &kp STAR
+#define _HASH &kp HASH
+#define _DOLL &kp DOLLAR
+#define _UNDR &holdtap_right RALT UNDER
 
-#define _SUP &msc SCRL_UP
-#define _SDOW &msc SCRL_DOWN
-#define _SLEF &msc SCRL_LEFT
-#define _SRIG &msc SCRL_RIGHT
+#define _FSLH &holdtap_right LSHIFT FSLH
+#define _QMRK &holdtap_right LCTRL QMARK
+#define _BSLH &holdtap_right LALT BSLH
 
-#define _MUP &mmv MOVE_UP
-#define _MDOW &mmv MOVE_DOWN
-#define _MLEF &mmv MOVE_LEFT
-#define _MRIG &mmv MOVE_RIGHT
-
-#define _CUT &holdtap_left LALT K_CUT
-#define _COPY &holdtap_left LCTRL K_COPY
-#define _PAST &holdtap_left LSHIFT K_PASTE
-
-#define _LCLK &mkp LCLK
-#define _MCLK &mkp MCLK
-#define _RCLK &mkp RCLK
-
-#define _J_E1 &sl LAYER_E1
 
 ZMK_LAYER(_LAYER_D1,
 //╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
- _ _     _BMIN _BDN  _BUP  _BMAX _SLEF _SDOW _SUP  _SRIG _   _
+ _ _     _     _     _     _     _TILD _PIPE _AMPS _PRCN _     _
 //├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
- _ _     _MUTE _VDN  _VUP  _VMAX _MLEF _MDOW _MUP  _MRIG _   _
+ _ _     _     _     _     _     _CART _STAR _HASH _DOLL _UNDR _
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
- _ _     _CUT  _COPY _PAST _     _     _LCLK _MCLK _RCLK _   _
+ _ _     _     _     _     _     _     _FSLH _QMRK _BSLH _     _
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
-               _     _     _     _     _J_E1 _
+               _     _CAPS _SPC  _J_B1 _J_C1 _
 //                  ╰─────┴─────┴─────┴─────╯
 )
+

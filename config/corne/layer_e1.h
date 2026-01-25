@@ -19,25 +19,17 @@ Functional keys layer.
 #define _F8 &kp F8
 #define _F9 &kp F9
 #define _F10 &kp F10
-#define _F11 &kp F11
-#define _F12 &kp F12
-#define _F13 &kp F13
-#define _F14 &kp F14
-#define _F15 &kp F15
-#define _F16 &kp F16
-#define _F17 &kp F17
-#define _F18 &kp F18
-#define _F19 &kp F19
-#define _F20 &kp F20
+
+#define _J_A2 &to LAYER_A2
 
 ZMK_LAYER(_LAYER_E1,
 //╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
- _  _     _     _     _     _     _F11  _F7   _F8   _F9   _    _
+ _ _     _     _     _     _     _     _F7   _F8   _F9   _    _
 //├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
- _  _BCLR _     _     _     _     _F12  _F4   _F5   _F6   _F10 _
+ _ _BCLR _J_A2 _     _     _     _     _F4   _F5   _F6   _F10 _
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
- _  _     _BT0  _BT1  _BT2  _     _     _F1   _F2   _F3   _    _
+ _ _     _BT0  _BT1  _BT2  _     _     _F1   _F2   _F3   _    _
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
-               _     _     _     _     _     _
+               _     _CAPS _SPC  _J_B1 _J_C1 _
 //                  ╰─────┴─────┴─────┴─────╯
 )

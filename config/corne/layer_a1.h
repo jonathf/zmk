@@ -5,15 +5,15 @@ Assuming US-international keyboard layout.
 */
 #define _A &holdtap_left RALT A
 #define _W &layertap_left LAYER_E1 W
-#define _E &kp E
+#define _E &layertap_left LAYER_F1 E
 #define _R &kp R
 #define _T &kp T
 
 #define _Y &kp Y
 #define _U &kp U
 #define _I &kp I
-#define _O &layertap_right LAYER_D1 O
-#define _P &kp P
+#define _O &kp O
+#define _P &holdtap_right RALT P
 
 #define _X &holdtap_left RALT X
 #define _S &kp S
@@ -48,7 +48,7 @@ ZMK_HOLD_TAP(_caps, _hold_tap_args(&kp, &__caps_us))
 #define _CAPS &_caps LA(LC(LGUI)) 0
 
 // #define _SPC &holdtap LA(LC(LGUI)) SPACE
-#define _SPC &layertap LAYER_F1 SPACE
+#define _SPC &layertap LAYER_D1 SPACE
 
 #define _J_B1 &sl LAYER_B1
 #define _J_C1 &sl LAYER_C1

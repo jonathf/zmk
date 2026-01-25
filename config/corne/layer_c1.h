@@ -40,8 +40,6 @@ ZMK_HOLD_TAP(__acute, _hold_tap_args(&kp, &__acute_nodead))
 #define _EXCL &holdtap_right LCTRL EXCL
 #define _PIPE &holdtap_right LALT PIPE
 
-#define _J_A2 &to LAYER_A2
-
 
 ZMK_LAYER(_LAYER_C1,
 //╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
@@ -51,6 +49,6 @@ ZMK_LAYER(_LAYER_C1,
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
  _ _     _TILD _GRAV _ACUT _     _     _STAR _EXCL _PIPE _     _
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
-               _     _J_A2 _     _J_B1 _J_C1 _
+               _     _CAPS _SPC  _J_B1 _J_C1 _
 //                  ╰─────┴─────┴─────┴─────╯
 )
