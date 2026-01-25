@@ -1,12 +1,11 @@
 /*
 Functional keys layer.
 */
+#define _PSCR &kp PSCRN
+
 #define _BT0 &bt BT_SEL 0
 #define _BT1 &bt BT_SEL 1
 #define _BT2 &bt BT_SEL 2
-#define _BT3 &bt BT_SEL 3
-#define _BT4 &bt BT_SEL 4
-#define _BT5 &bt BT_SEL 5
 #define _BCLR &bt BT_CLR
 
 #define _F1 &kp F1
@@ -24,7 +23,7 @@ Functional keys layer.
 
 ZMK_LAYER(_LAYER_E1,
 //╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
- _ _     _     _     _     _     _     _F7   _F8   _F9   _    _
+ _ _     _     _PSCR _     _     _     _F7   _F8   _F9   _    _
 //├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
  _ _BCLR _J_A2 _     _     _     _     _F4   _F5   _F6   _F10 _
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯

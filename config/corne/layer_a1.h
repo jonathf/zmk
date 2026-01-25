@@ -3,7 +3,6 @@ Main QWERTY layer.
 
 Assuming US-international keyboard layout.
 */
-#define _A &holdtap_left RALT A
 #define _W &layertap_left LAYER_E1 W
 #define _E &layertap_left LAYER_F1 E
 #define _R &kp R
@@ -13,9 +12,8 @@ Assuming US-international keyboard layout.
 #define _U &kp U
 #define _I &kp I
 #define _O &kp O
-#define _P &holdtap_right RALT P
 
-#define _X &holdtap_left RALT X
+#define _A &holdtap_left RALT A
 #define _S &kp S
 #define _D &kp D
 #define _F &kp F
@@ -25,11 +23,7 @@ Assuming US-international keyboard layout.
 #define _J &kp J
 #define _K &kp K
 #define _L &kp L
-ZMK_MOD_MORPH(__fslh,
-  bindings = <&holdtap_right RALT FSLH>, <&kp BSLH>;
-  mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-#define _FSLH &__fslh
+#define _P &holdtap_right RALT P
 
 #define _C &holdtap_left LALT C
 #define _V &holdtap_left LCTRL V
@@ -43,13 +37,9 @@ ZMK_MOD_MORPH(__dot,
 )
 #define _DOT &__dot
 
-// #define _CAPS &_caps_us LAYER_D1 0
 ZMK_HOLD_TAP(_caps, _hold_tap_args(&kp, &__caps_us))
 #define _CAPS &_caps LA(LC(LGUI)) 0
-
-// #define _SPC &holdtap LA(LC(LGUI)) SPACE
 #define _SPC &layertap LAYER_D1 SPACE
-
 #define _J_B1 &sl LAYER_B1
 #define _J_C1 &sl LAYER_C1
 
