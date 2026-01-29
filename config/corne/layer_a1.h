@@ -11,7 +11,7 @@ Assuming US-international keyboard layout.
 #define _Y &kp Y
 #define _U &kp U
 #define _I &kp I
-#define _O &kp O
+#define _O &layertap_right LAYER_G1 O
 
 #define _A &holdtap_left RALT A
 #define _S &kp S

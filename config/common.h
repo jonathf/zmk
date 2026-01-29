@@ -21,6 +21,7 @@ Common definitions.
 #define LAYER_D1 6
 #define LAYER_E1 7
 #define LAYER_F1 8
+#define LAYER_G1 9
 
 #define LAYER_US 0 2 4 6 7 8
 #define LAYER_NO 1 3 5 6 7 8

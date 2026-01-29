@@ -3,9 +3,10 @@ Main navigation layer.
 
 Assuming US-international keyboard layout.
 */
-#define _HASH &kp HASH
+#define _EXCL &kp EXCL
 #define _LDAN &kp RA(LBKT)
 #define _RDAN &kp RA(RBKT)
+#define _QMRK &kp QMARK
 
 #define _HOME &kp HOME
 #define _PGDN &kp PG_DN
@@ -16,12 +17,14 @@ Assuming US-international keyboard layout.
 #define _SQT &kp SQT
 #define _LT &kp LT
 #define _GT &kp GT
+#define _AMPS &holdtap_right LGUI AMPS
 
 #define _LEFT &holdtap_right LGUI LEFT
 #define _DOWN &kp DOWN
 #define _UP &kp UP
 #define _RIGT &kp RIGHT
 
+#define _TILD &holdtap_left LALT TILDE
 #define _GRAV &holdtap_left LCTRL GRAVE
 ZMK_MACRO(__acute_nodead,
   bindings = <&kp RA(SQT) &kp RA(SQT)>;
@@ -32,11 +35,11 @@ ZMK_HOLD_TAP(__acute, _hold_tap_args(&kp, &__acute_nodead))
 
 ZMK_LAYER(_LAYER_C1,
 //╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
- _ _     _HASH _LDAN _RDAN _     _HOME _PGDN _PGUP _END  _     _
+ _ _     _EXCL _LDAN _RDAN _QMRK _HOME _PGDN _PGUP _END  _     _
 //├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
- _ _SEMI _SQT  _LT   _GT   _     _LEFT _DOWN _UP   _RIGT _     _
+ _ _SEMI _SQT  _LT   _GT   _AMPS _LEFT _DOWN _UP   _RIGT _     _
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
- _ _     _     _GRAV _ACUT _     _     _     _     _     _     _
+ _ _     _TILD _GRAV _ACUT _     _     _     _     _     _     _
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
                _     _CAPS _SPC  _J_B1 _J_C1 _
 //                  ╰─────┴─────┴─────┴─────╯
