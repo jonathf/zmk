@@ -18,25 +18,25 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/42.h"
 
-#define _TS _ _
-#define _TE _ _
-#define _MS _
-#define _ME _
-#define _BS _ _
-#define _BM _ _
-#define _BE _ _
-#define _HS _
-#define _HE _
+#define TOP_START_PADDING _ _
+#define TOP_END_PADDING _ _
+#define MIDDLE_START_PADDING _
+#define MIDDLE_END_PADDING _
+#define BOTTOM_START_PADDING _ _
+#define BOTTOM_MIDDLE_PADDING _ _
+#define BOTTOM_END_PADDING _ _
+#define THUMB_START_PADDING _
+#define THUMB_END_PADDING _
 
 #include "common.h"
 #include "corne/combo.h"
-#include "corne/layer_a1.h"
+#include "layers/a.h"
 #include "corne/layer_a2.h"
-#include "corne/layer_b1.h"
+#include "layers/b.h"
 #include "corne/layer_b2.h"
-#include "corne/layer_c1.h"
+#include "layers/c.h"
 #include "corne/layer_c2.h"
-#include "corne/layer_d1.h"
-#include "corne/layer_e1.h"
-#include "corne/layer_f1.h"
-#include "corne/layer_g1.h"
+#include "layers/d.h"
+#include "layers/e.h"
+#include "layers/f.h"
+#include "layers/g.h"

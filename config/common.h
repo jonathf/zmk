@@ -2,6 +2,7 @@
 Common definitions.
 */
 #define _ &none
+#define _PAD BOTTOM_MIDDLE_PADDING
 
 #define _LEFT_HAND \
   LT0 LT1 LT2 LT3 LT4 \
