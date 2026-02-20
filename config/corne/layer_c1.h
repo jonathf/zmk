@@ -35,12 +35,12 @@ ZMK_HOLD_TAP(__acute, _hold_tap_args(&kp, &__acute_nodead))
 
 ZMK_LAYER(_LAYER_C1,
 //╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
- _ _     _EXCL _LDAN _RDAN _QMRK _HOME _PGDN _PGUP _END  _     _
+ _TS     _EXCL _LDAN _RDAN _QMRK _HOME _PGDN _PGUP _END      _TE
 //├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
- _ _SEMI _SQT  _LT   _GT   _AMPS _LEFT _DOWN _UP   _RIGT _     _
+ _MS _SEMI _SQT _LT  _GT   _AMPS _LEFT _DOWN _UP   _RIGT _   _ME
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
- _ _     _TILD _GRAV _ACUT _     _     _     _     _     _     _
+ _BS     _TILD _GRAV _ACUT     _BM     _     _     _         _BE
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
-               _     _CAPS _SPC  _J_B1 _J_C1 _
+               _HS   _CAPS _SPC  _J_B1 _J_C1 _HE
 //                  ╰─────┴─────┴─────┴─────╯
 )

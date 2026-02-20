@@ -18,6 +18,16 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/42.h"
 
+#define _TS _ _
+#define _TE _ _
+#define _MS _
+#define _ME _
+#define _BS _ _
+#define _BM _ _
+#define _BE _ _
+#define _HS _
+#define _HE _
+
 #include "common.h"
 #include "corne/combo.h"
 #include "corne/layer_a1.h"

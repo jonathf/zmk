@@ -35,13 +35,13 @@ Assuming US-international keyboard layout.
 
 ZMK_LAYER(_LAYER_B1,
 //╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
- _ _     _AT   _LBRC _RBRC _EQ   _PLUS _N7   _N8   _N9   _   _
+ _TS      _AT   _LBRC _RBRC _EQ   _PLUS _N7   _N8   _N9       _TE
 //├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
- _ _COMA _DQT  _LPAR _RPAR _DOLL _DASH _N4   _N5   _N6   _N0 _
+ _MS _COMA _DQT _LPAR _RPAR _DOLL _DASH _N4   _N5   _N6   _N0 _ME
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
- _ _     _CART _LBKT _RBKT _     _     _N1   _N2   _N3   _     _
+ _BS      _CART _LBKT _RBKT    _BM      _N1   _N2   _N3       _BE
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
-               _     _CAPS _SPC  _J_B1 _J_C1 _
+               _HS    _CAPS _SPC  _J_B1 _J_C1 _HE
 //                  ╰─────┴─────┴─────┴─────╯
 )
 
