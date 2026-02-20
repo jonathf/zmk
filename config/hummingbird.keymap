@@ -18,13 +18,25 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/hummingbird.h"
 
+#define TOP_START_PADDING _
+#define TOP_END_PADDING _
+#define MIDDLE_START_PADDING
+#define MIDDLE_END_PADDING
+#define BOTTOM_START_PADDING
+#define BOTTOM_MIDDLE_PADDING
+#define BOTTOM_END_PADDING
+#define THUMB_START_PADDING
+#define THUMB_END_PADDING
+
 #include "common.h"
 #include "hummingbird/combo.h"
-#include "hummingbird/layer_a1.h"
+#include "layers/a.h"
 #include "hummingbird/layer_a2.h"
-#include "hummingbird/layer_b1.h"
+#include "layers/b.h"
 #include "hummingbird/layer_b2.h"
-#include "hummingbird/layer_c1.h"
+#include "layers/c.h"
 #include "hummingbird/layer_c2.h"
-#include "hummingbird/layer_d1.h"
-#include "hummingbird/layer_e1.h"
+#include "layers/d.h"
+#include "layers/e.h"
+#include "layers/f.h"
+#include "layers/g.h"

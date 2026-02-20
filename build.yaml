@@ -1,6 +1,6 @@
 include:
-  # - board: seeeduino_xiao_ble
-  #   shield: hummingbird
+  - board: xiao_ble
+    shield: hummingbird
   - board: nice_nano
     shield: corne_left
     #nice_view_adapter nice_view
