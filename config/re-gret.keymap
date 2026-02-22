@@ -1,0 +1,28 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+
+#include "zmk-helpers/helper.h"
+#include "zmk-helpers/key-labels/34.h"
+
+#define TOP_START_PADDING _ _
+#define TOP_END_PADDING _ _
+#define MIDDLE_START_PADDING _
+#define MIDDLE_END_PADDING _
+#define BOTTOM_START_PADDING _ _
+#define BOTTOM_MIDDLE_PADDING _ _
+#define BOTTOM_END_PADDING _ _
+#define THUMB_START_PADDING
+#define THUMB_END_PADDING
+
+#include "common.h"
+#include "combo.h"
+#include "layers/a.h"
+#include "layers/b.h"
+#include "layers/c.h"
+#include "layers/d.h"
+#include "layers/e.h"
+#include "layers/f.h"
+#include "layers/g.h"

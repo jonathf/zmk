@@ -2,13 +2,18 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: rschenk
+      url-base: https://github.com/rschenk
     - name: urob
       url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3.0
       import: app/west.yml
+    - name: zmk-keyboard-re-gret
+      remote: rschenk
+      revision: v0.3.0
     - name: zmk-helpers
       remote: urob
       revision: main
