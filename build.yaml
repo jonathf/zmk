@@ -3,6 +3,8 @@ include:
     shield: hummingbird
   - board: xiao_ble
     shield: re-gret
+  - board: xiao_ble
+    shield: zilpzalp
   - board: nice_nano
     shield: corne_left
     #nice_view_adapter nice_view

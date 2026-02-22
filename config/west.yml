@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/rschenk
     - name: urob
       url-base: https://github.com/urob
+    - name: kilipan
+      url-base: https://github.com/kilipan
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -16,6 +18,9 @@ manifest:
       revision: v0.3.0
     - name: zmk-helpers
       remote: urob
+      revision: main
+    - name: zmk-keyboards-zilpzalp
+      remote: kilipan
       revision: main
   self:
     path: config
