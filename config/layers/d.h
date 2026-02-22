@@ -17,7 +17,7 @@ ZMK_MOD_MORPH(__fslh,
 
 #define _CUTE &holdtap_left LSHIFT RA(SQT)
 
-ZMK_LAYER(_LAYER_D1,                                            TOP_START_PADDING
+ZMK_LAYER(_LAYER_D,                                             TOP_START_PADDING
 //      ╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
          _HASH _EURO _     _     _     _     _     _            TOP_END_PADDING MIDDLE_START_PADDING
 //╭─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────╮
@@ -25,6 +25,6 @@ ZMK_LAYER(_LAYER_D1,                                            TOP_START_PADDIN
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
          _PRCN _PIPE _CUTE    _PAD     _     _     _            BOTTOM_END_PADDING THUMB_START_PADDING
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
-                     _CAPS _SPC  _J_B1 _J_C1                    THUMB_END_PADDING
+                     _CAPS _SPC  _J_B  _J_C                     THUMB_END_PADDING
 //                  ╰─────┴─────┴─────┴─────╯
 )

@@ -12,7 +12,7 @@ Functional keys layer.
 #define _F19 &kp F19
 #define _F20 &kp F20
 
-ZMK_LAYER(_LAYER_F1,                                            TOP_START_PADDING
+ZMK_LAYER(_LAYER_F,                                             TOP_START_PADDING
 //      ╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
          _     _     _     _     _     _F17  _F18  _F19         TOP_END_PADDING MIDDLE_START_PADDING
 //╭─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────╮
@@ -20,6 +20,6 @@ ZMK_LAYER(_LAYER_F1,                                            TOP_START_PADDIN
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
          _     _     _     _     _     _F11  _F12  _F13         BOTTOM_END_PADDING THUMB_START_PADDING
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
-                     _CAPS _SPC  _J_B1 _J_C1                    THUMB_END_PADDING
+                     _CAPS _SPC  _J_B  _J_C                     THUMB_END_PADDING
 //                  ╰─────┴─────┴─────┴─────╯
 )

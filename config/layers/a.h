@@ -3,15 +3,15 @@ Main QWERTY layer.
 
 Assuming US-international keyboard layout.
 */
-#define _W &layertap_left LAYER_E1 W
-#define _E &layertap_left LAYER_F1 E
+#define _W &layertap_left LAYER_E W
+#define _E &layertap_left LAYER_F E
 #define _R &kp R
 #define _T &kp T
 
 #define _Y &kp Y
 #define _U &kp U
 #define _I &kp I
-#define _O &layertap_right LAYER_G1 O
+#define _O &layertap_right LAYER_G O
 
 #define _A &holdtap_left RALT A
 #define _S &kp S
@@ -39,11 +39,11 @@ ZMK_MOD_MORPH(__dot,
 
 ZMK_HOLD_TAP(_caps, _hold_tap_args(&kp, &__caps_us))
 #define _CAPS &_caps LA(LC(LGUI)) 0
-#define _SPC &layertap LAYER_D1 SPACE
-#define _J_B1 &sl LAYER_B1
-#define _J_C1 &sl LAYER_C1
+#define _SPC &layertap LAYER_D SPACE
+#define _J_B &sl LAYER_B
+#define _J_C &sl LAYER_C
 
-ZMK_LAYER(_LAYER_A1,                                            TOP_START_PADDING
+ZMK_LAYER(_LAYER_A,                                             TOP_START_PADDING
 //      ╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
           _W    _E    _R    _T    _Y    _U    _I    _O          TOP_END_PADDING MIDDLE_START_PADDING
 //╭─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────╮
@@ -51,6 +51,6 @@ ZMK_LAYER(_LAYER_A1,                                            TOP_START_PADDIN
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
           _C    _V    _B      _PAD      _N    _M    _DOT        BOTTOM_END_PADDING THUMB_START_PADDING
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
-                     _CAPS _SPC  _J_B1 _J_C1                    THUMB_END_PADDING
+                     _CAPS _SPC   _J_B  _J_C                    THUMB_END_PADDING
 //                  ╰─────┴─────┴─────┴─────╯
 )

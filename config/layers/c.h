@@ -33,7 +33,7 @@ ZMK_HOLD_TAP(__acute, _hold_tap_args(&kp, &__acute_nodead))
 #define _ACUT &__acute LSHIFT 0
 
 
-ZMK_LAYER(_LAYER_C1,                                            TOP_START_PADDING
+ZMK_LAYER(_LAYER_C,                                             TOP_START_PADDING
 //      ╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
          _EXCL _LDAN _RDAN _QMRK _HOME _PGDN _PGUP _END         TOP_END_PADDING MIDDLE_START_PADDING
 //╭─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────╮
@@ -41,6 +41,6 @@ ZMK_LAYER(_LAYER_C1,                                            TOP_START_PADDIN
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
          _TILD _GRAV _ACUT    _PAD     _     _     _            BOTTOM_END_PADDING THUMB_START_PADDING
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
-                     _CAPS _SPC  _J_B1 _J_C1                    THUMB_END_PADDING
+                     _CAPS _SPC  _J_B  _J_C                     THUMB_END_PADDING
 //                  ╰─────┴─────┴─────┴─────╯
 )

@@ -29,13 +29,10 @@
 #define THUMB_END_PADDING _
 
 #include "common.h"
-#include "corne/combo.h"
+#include "combo.h"
 #include "layers/a.h"
-#include "corne/layer_a2.h"
 #include "layers/b.h"
-#include "corne/layer_b2.h"
 #include "layers/c.h"
-#include "corne/layer_c2.h"
 #include "layers/d.h"
 #include "layers/e.h"
 #include "layers/f.h"

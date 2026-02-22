@@ -33,7 +33,7 @@ Assuming US-international keyboard layout.
 #define _N2 &holdtap_right LCTRL N2
 #define _N3 &holdtap_right LALT N3
 
-ZMK_LAYER(_LAYER_B1,                                            TOP_START_PADDING
+ZMK_LAYER(_LAYER_B,                                             TOP_START_PADDING
 //      ╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
          _AT   _LBRC _RBRC _EQ   _PLUS _N7   _N8   _N9          TOP_END_PADDING MIDDLE_START_PADDING
 //╭─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────╮
@@ -41,7 +41,7 @@ ZMK_LAYER(_LAYER_B1,                                            TOP_START_PADDIN
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
          _CART _LBKT _RBKT    _PAD     _N1   _N2   _N3          BOTTOM_END_PADDING THUMB_START_PADDING
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
-                     _CAPS _SPC  _J_B1 _J_C1                    THUMB_END_PADDING
+                     _CAPS _SPC  _J_B  _J_C                     THUMB_END_PADDING
 //                  ╰─────┴─────┴─────┴─────╯
 )
 

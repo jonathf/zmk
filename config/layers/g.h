@@ -29,9 +29,9 @@ Mouse and media layer.
 #define _MCLK &mkp MCLK
 #define _RCLK &mkp RCLK
 
-#define _J_E1 &sl LAYER_E1
+#define _J_E1 &sl LAYER_E
 
-ZMK_LAYER(_LAYER_G1,                                            TOP_START_PADDING
+ZMK_LAYER(_LAYER_G,                                             TOP_START_PADDING
 //      ╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
          _BMIN _BDN  _BUP  _BMAX _SLEF _SDOW _SUP  _SRIG        TOP_END_PADDING MIDDLE_START_PADDING
 //╭─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────╮
@@ -39,6 +39,6 @@ ZMK_LAYER(_LAYER_G1,                                            TOP_START_PADDIN
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
          _CUT  _COPY _PAST    _PAD     _LCLK _MCLK _RCLK        BOTTOM_END_PADDING THUMB_START_PADDING
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
-                     _CAPS _SPC  _J_B1 _J_C1                    THUMB_END_PADDING
+                     _CAPS _SPC  _J_B  _J_C                     THUMB_END_PADDING
 //                  ╰─────┴─────┴─────┴─────╯
 )

@@ -19,16 +19,14 @@ Functional keys layer.
 #define _F9 &kp F9
 #define _F10 &kp F10
 
-#define _J_A2 &to LAYER_A2
-
-ZMK_LAYER(_LAYER_E1,                                            TOP_START_PADDING
+ZMK_LAYER(_LAYER_E,                                             TOP_START_PADDING
 //      ╭─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────╮
          _     _PSCR _     _     _     _F7   _F8   _F9          TOP_END_PADDING MIDDLE_START_PADDING
 //╭─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────╮
-   _BCLR _J_A2 _     _     _     _     _F4   _F5   _F6   _F10   MIDDLE_END_PADDING BOTTOM_START_PADDING
+   _BCLR _     _     _     _     _     _F4   _F5   _F6   _F10   MIDDLE_END_PADDING BOTTOM_START_PADDING
 //╰─────┼─────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────╯
          _BT0  _BT1  _BT2     _PAD     _F1   _F2   _F3          BOTTOM_END_PADDING THUMB_START_PADDING
 //      ╰─────┴─────┼─────┼─────┬─────┼─────┼─────┴─────╯
-                     _CAPS _SPC  _J_B1 _J_C1                    THUMB_END_PADDING
+                     _CAPS _SPC  _J_B  _J_C                     THUMB_END_PADDING
 //                  ╰─────┴─────┴─────┴─────╯
 )
