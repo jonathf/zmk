@@ -28,6 +28,9 @@
 #define THUMB_START_PADDING
 #define THUMB_END_PADDING
 
+#define LT4
+#define RT4
+
 #include "common.h"
 #include "combo.h"
 #include "layers/a.h"
